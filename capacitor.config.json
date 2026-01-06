@@ -1,0 +1,16 @@
+{
+    "appId": "com.fishpuzzle.game",
+    "appName": "Fish Puzzle",
+    "webDir": "fish game",
+    "bundledWebRuntime": false,
+    "server": {
+        "androidScheme": "https"
+    },
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 0,
+            "launchAutoHide": true,
+            "backgroundColor": "#00000000"
+        }
+    }
+}
