@@ -12,7 +12,7 @@
     "version": "8.1.1"
   },
   "dependencies": {
-    "@capacitor/android": "^6.0.0",
+    "@capacitor/android": "^8.0.0",
     "@capacitor/core": "^6.0.0",
     "@emulatorjs/core-mgba": "^4.2.3",
     "hexo": "^8.1.1",
