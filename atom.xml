@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>文之物语</title>
+  
+  
+  <link href="https://831014.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://831014.xyz/"/>
+  <updated>2026-01-10T16:52:23.101Z</updated>
+  <id>https://831014.xyz/</id>
+  
+  <author>
+    <name>amiamii</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>街机 突击骑兵2在线玩</title>
+    <link href="https://831014.xyz/posts/st2nd-fixed/"/>
+    <id>https://831014.xyz/posts/st2nd-fixed/</id>
+    <published>2026-01-10T06:38:00.000Z</published>
+    <updated>2026-01-10T16:52:23.101Z</updated>
+    
+    
+    <summary type="html">街机 突击骑兵2在线玩，支持 WSAD 操控、投币开始与即时存档。NeoGeo 经典俯视角动作射击神作。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
+    
+    <category term="Arcade" scheme="https://831014.xyz/tags/Arcade/"/>
+    
+    <category term="FBNeo" scheme="https://831014.xyz/tags/FBNeo/"/>
+    
+    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GBC 超级马里奥乐园2六个金币DX在线玩</title>
+    <link href="https://831014.xyz/posts/gbcmario2dx/"/>
+    <id>https://831014.xyz/posts/gbcmario2dx/</id>
+    <published>2026-01-10T05:40:00.000Z</published>
+    <updated>2026-01-10T05:40:00.208Z</updated>
+    
+    
+    <summary type="html">GBC 超级马里奥乐园2六个金币DX在线玩，支持彩色显示、WSAD 操控与即时存档。GameBoy 经典杰作的彩色高清复刻。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="马里奥" scheme="https://831014.xyz/tags/%E9%A9%AC%E9%87%8C%E5%A5%A5/"/>
+    
+    <category term="Super Mario" scheme="https://831014.xyz/tags/Super-Mario/"/>
+    
+    <category term="GBC" scheme="https://831014.xyz/tags/GBC/"/>
+    
+    <category term="GameBoyColor" scheme="https://831014.xyz/tags/GameBoyColor/"/>
+    
+    <category term="DX版" scheme="https://831014.xyz/tags/DX%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GBA 超级马里奥Advance4超级马里奥兄弟3在线玩</title>
+    <link href="https://831014.xyz/posts/gbagame3/"/>
+    <id>https://831014.xyz/posts/gbagame3/</id>
+    <published>2026-01-10T04:21:00.000Z</published>
+    <updated>2026-01-10T04:21:05.796Z</updated>
+    
+    
+    <summary type="html">GBA 超级马里奥Advance4超级马里奥兄弟3在线玩，支持 WSAD 操控、自动存档与即时存档。GBA 经典神作。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="GBA" scheme="https://831014.xyz/tags/GBA/"/>
+    
+    <category term="GameBoyAdvance" scheme="https://831014.xyz/tags/GameBoyAdvance/"/>
+    
+    <category term="马里奥" scheme="https://831014.xyz/tags/%E9%A9%AC%E9%87%8C%E5%A5%A5/"/>
+    
+    <category term="Super Mario" scheme="https://831014.xyz/tags/Super-Mario/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FC 兔宝宝大冒险在线玩</title>
+    <link href="https://831014.xyz/posts/fctinytoon/"/>
+    <id>https://831014.xyz/posts/fctinytoon/</id>
+    <published>2026-01-10T03:59:00.000Z</published>
+    <updated>2026-01-10T03:59:07.706Z</updated>
+    
+    
+    <summary type="html">FC 兔宝宝大冒险在线玩，支持 WSAD 操控、自动存档与即时存档。经典 Konami 动作游戏。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
+    
+    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="兔宝宝" scheme="https://831014.xyz/tags/%E5%85%94%E5%AE%9D%E5%AE%9D/"/>
+    
+    <category term="Tiny Toon" scheme="https://831014.xyz/tags/Tiny-Toon/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FC 猫捉老鼠在线玩</title>
+    <link href="https://831014.xyz/posts/fcgame4/"/>
+    <id>https://831014.xyz/posts/fcgame4/</id>
+    <published>2026-01-10T01:35:00.000Z</published>
+    <updated>2026-01-10T01:34:20.605Z</updated>
+    
+    
+    <summary type="html">FC 猫捉老鼠在线玩，支持 WSAD 操控、自动存档与即时存档。经典南梦宫动作游戏。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
+    
+    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="猫捉老鼠" scheme="https://831014.xyz/tags/%E7%8C%AB%E6%8D%89%E8%80%81%E9%BC%A0/"/>
+    
+    <category term="Mappy" scheme="https://831014.xyz/tags/Mappy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>龙珠</title>
+    <link href="https://831014.xyz/posts/dragonball/"/>
+    <id>https://831014.xyz/posts/dragonball/</id>
+    <published>2026-01-09T17:20:00.000Z</published>
+    <updated>2026-01-09T19:03:57.847Z</updated>
+    
+    
+    <summary type="html">龙珠精选图片集。内容待更新。</summary>
+    
+    
+    
+    <category term="动漫" scheme="https://831014.xyz/categories/%E5%8A%A8%E6%BC%AB/"/>
+    
+    
+    <category term="龙珠" scheme="https://831014.xyz/tags/%E9%BE%99%E7%8F%A0/"/>
+    
+    <category term="Dragon Ball" scheme="https://831014.xyz/tags/Dragon-Ball/"/>
+    
+    <category term="漫画" scheme="https://831014.xyz/tags/%E6%BC%AB%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SFC 超级魔法气泡 2 混音版在线玩</title>
+    <link href="https://831014.xyz/posts/puyo2_sfc/"/>
+    <id>https://831014.xyz/posts/puyo2_sfc/</id>
+    <published>2026-01-09T17:05:00.000Z</published>
+    <updated>2026-01-09T19:03:57.892Z</updated>
+    
+    
+    <summary type="html">SFC 超级魔法气泡 2 混音版在线玩，经典的街机益智游戏，支持即时存读档与 WSAD 操控。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="SFC" scheme="https://831014.xyz/tags/SFC/"/>
+    
+    <category term="超任" scheme="https://831014.xyz/tags/%E8%B6%85%E4%BB%BB/"/>
+    
+    <category term="魔法气泡" scheme="https://831014.xyz/tags/%E9%AD%94%E6%B3%95%E6%B0%94%E6%B3%A1/"/>
+    
+    <category term="Puyo Puyo" scheme="https://831014.xyz/tags/Puyo-Puyo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件</title>
+    <link href="https://831014.xyz/posts/software/"/>
+    <id>https://831014.xyz/posts/software/</id>
+    <published>2026-01-08T17:32:00.347Z</published>
+    <updated>2026-01-09T19:03:57.896Z</updated>
+    
+    
+    <summary type="html">常用装机必备工具箱，包含文件传输、视频处理、下载器、硬盘检测等各类高效神器合集。</summary>
+    
+    
+    
+    <category term="软件" scheme="https://831014.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://831014.xyz/tags/software/"/>
+    
+    <category term="工具" scheme="https://831014.xyz/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>书签</title>
+    <link href="https://831014.xyz/posts/bookmark/"/>
+    <id>https://831014.xyz/posts/bookmark/</id>
+    <published>2026-01-08T17:32:00.344Z</published>
+    <updated>2026-01-09T19:03:57.892Z</updated>
+    
+    
+    <summary type="html">私藏的优质网站书签合集，涵盖动漫、游戏、实用软件工具及各大资源站点推荐。</summary>
+    
+    
+    
+    <category term="软件" scheme="https://831014.xyz/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="书签" scheme="https://831014.xyz/tags/bookmark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KOF 拳皇游戏合集</title>
+    <link href="https://831014.xyz/posts/kof_games/"/>
+    <id>https://831014.xyz/posts/kof_games/</id>
+    <published>2026-01-02T23:05:00.000Z</published>
+    <updated>2026-01-02T23:05:00.000Z</updated>
+    
+    
+    <summary type="html">拳皇 (The King of Fighters) 游戏合集</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/tags/game/"/>
+    
+    <category term="KOF" scheme="https://831014.xyz/tags/KOF/"/>
+    
+    <category term="拳皇" scheme="https://831014.xyz/tags/%E6%8B%B3%E7%9A%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pokemon 宝可梦游戏合集</title>
+    <link href="https://831014.xyz/posts/pokemon_games/"/>
+    <id>https://831014.xyz/posts/pokemon_games/</id>
+    <published>2026-01-01T22:56:00.000Z</published>
+    <updated>2026-01-09T19:03:57.890Z</updated>
+    
+    
+    <summary type="html">Pokemon 宝可梦游戏合集。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="宝可梦" scheme="https://831014.xyz/tags/%E5%AE%9D%E5%8F%AF%E6%A2%A6/"/>
+    
+    <category term="Pokemon" scheme="https://831014.xyz/tags/Pokemon/"/>
+    
+    <category term="游戏合集" scheme="https://831014.xyz/tags/%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PC 快打旋风 重制版</title>
+    <link href="https://831014.xyz/posts/pc_mff_forever/"/>
+    <id>https://831014.xyz/posts/pc_mff_forever/</id>
+    <published>2026-01-01T17:05:00.000Z</published>
+    <updated>2026-01-09T19:03:57.889Z</updated>
+    
+    
+    <summary type="html">Mighty Final Fight Forever 同人重制版下载，附出招表。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="快打旋风" scheme="https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/"/>
+    
+    <category term="PC" scheme="https://831014.xyz/tags/PC/"/>
+    
+    <category term="同人游戏" scheme="https://831014.xyz/tags/%E5%90%8C%E4%BA%BA%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="下载" scheme="https://831014.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FC 快打旋风在线玩</title>
+    <link href="https://831014.xyz/posts/fcgame3/"/>
+    <id>https://831014.xyz/posts/fcgame3/</id>
+    <published>2025-12-30T16:44:00.000Z</published>
+    <updated>2026-01-09T19:03:57.855Z</updated>
+    
+    
+    <summary type="html">FC 快打旋风在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
+    
+    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="快打旋风" scheme="https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FC 气球大战在线玩</title>
+    <link href="https://831014.xyz/posts/fcgame2/"/>
+    <id>https://831014.xyz/posts/fcgame2/</id>
+    <published>2025-12-29T16:59:00.000Z</published>
+    <updated>2026-01-09T19:03:57.855Z</updated>
+    
+    
+    <summary type="html">FC 气球大战在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
+    
+    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="气球大战" scheme="https://831014.xyz/tags/%E6%B0%94%E7%90%83%E5%A4%A7%E6%88%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SFC 流行兵蜂在线玩</title>
+    <link href="https://831014.xyz/posts/twinbee_sfc/"/>
+    <id>https://831014.xyz/posts/twinbee_sfc/</id>
+    <published>2025-12-29T16:32:00.000Z</published>
+    <updated>2026-01-09T19:03:57.891Z</updated>
+    
+    
+    <summary type="html">SFC 流行兵蜂在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="SFC" scheme="https://831014.xyz/tags/SFC/"/>
+    
+    <category term="超任" scheme="https://831014.xyz/tags/%E8%B6%85%E4%BB%BB/"/>
+    
+    <category term="射击" scheme="https://831014.xyz/tags/%E5%B0%84%E5%87%BB/"/>
+    
+    <category term="兵蜂" scheme="https://831014.xyz/tags/%E5%85%B5%E8%9C%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FC 淘金者在线玩</title>
+    <link href="https://831014.xyz/posts/fcgame1/"/>
+    <id>https://831014.xyz/posts/fcgame1/</id>
+    <published>2025-12-29T15:00:00.000Z</published>
+    <updated>2026-01-09T19:03:57.877Z</updated>
+    
+    
+    <summary type="html">FC 淘金者在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
+    
+    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="淘金者" scheme="https://831014.xyz/tags/%E6%B7%98%E9%87%91%E8%80%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PCE 炸弹人&#39;94在线玩</title>
+    <link href="https://831014.xyz/posts/pcegame1/"/>
+    <id>https://831014.xyz/posts/pcegame1/</id>
+    <published>2025-12-28T06:18:00.000Z</published>
+    <updated>2026-01-09T19:03:57.888Z</updated>
+    
+    
+    <summary type="html">PCE 炸弹人&#39;94 在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
+    
+    <category term="PCE" scheme="https://831014.xyz/tags/PCE/"/>
+    
+    <category term="炸弹人" scheme="https://831014.xyz/tags/%E7%82%B8%E5%BC%B9%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GB 俄罗斯方块在线玩</title>
+    <link href="https://831014.xyz/posts/gbgame1/"/>
+    <id>https://831014.xyz/posts/gbgame1/</id>
+    <published>2025-12-28T04:58:00.000Z</published>
+    <updated>2026-01-09T19:03:57.885Z</updated>
+    
+    
+    <summary type="html">GB 俄罗斯方块 在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
+    
+    <category term="GB" scheme="https://831014.xyz/tags/GB/"/>
+    
+    <category term="俄罗斯方块" scheme="https://831014.xyz/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>街机 泡泡龙在线玩</title>
+    <link href="https://831014.xyz/posts/arcadegame3/"/>
+    <id>https://831014.xyz/posts/arcadegame3/</id>
+    <published>2025-12-27T18:25:00.000Z</published>
+    <updated>2026-01-09T19:03:57.894Z</updated>
+    
+    
+    <summary type="html">街机 泡泡龙 在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
+    
+    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
+    
+    <category term="泡泡龙" scheme="https://831014.xyz/tags/%E6%B3%A1%E6%B3%A1%E9%BE%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>街机 超级口袋战士迷你版在线玩</title>
+    <link href="https://831014.xyz/posts/arcadegame2/"/>
+    <id>https://831014.xyz/posts/arcadegame2/</id>
+    <published>2025-12-27T17:25:00.000Z</published>
+    <updated>2026-01-09T19:03:57.895Z</updated>
+    
+    
+    <summary type="html">街机 超级口袋战士迷你版 (CPS2) 在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
+    
+    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
+    
+    <category term="CPS2" scheme="https://831014.xyz/tags/CPS2/"/>
+    
+    <category term="格斗" scheme="https://831014.xyz/tags/%E6%A0%BC%E6%96%97/"/>
+    
+  </entry>
+  
+</feed>

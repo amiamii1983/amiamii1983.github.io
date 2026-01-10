@@ -1,0 +1,1 @@
+document.addEventListener("play",function(e){"VIDEO"!==e.target.tagName&&"AUDIO"!==e.target.tagName||(document.querySelectorAll("meting-js").forEach(e=>{e.ap&&e.ap.pause()}),"undefined"!=typeof ap&&ap.pause&&ap.pause())},!0);
