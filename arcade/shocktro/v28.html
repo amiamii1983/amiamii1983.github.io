@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>街机 突击骑兵 (V26-Final-Ergo)</title>
+    <title>街机 突击骑兵</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.1/nipplejs.min.js"></script>
     <style>
         :root {
             --game-height: 70vw;
             --control-bg: #111;
             --btn-size: 16vw;
-            /* Responsive size */
-            --btn-gap: 4vw;
         }
 
         * {
@@ -33,9 +31,10 @@
             overflow: hidden;
             display: block;
             position: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-        /* NUCLEAR SHIELD: Hide ALL EmulatorJS native controls */
+        /* SHIELD: Hide native controls */
         #gp_touch_controls,
         .gp_touch_button,
         .gp_touch_dpad,
@@ -46,7 +45,6 @@
             pointer-events: none !important;
         }
 
-        /* GAME AT TOP */
         #game-wrapper {
             position: absolute;
             top: 0;
@@ -72,41 +70,57 @@
             background: var(--control-bg);
             z-index: 1000;
             border-top: 1px solid #333;
-            display: flex;
-            flex-direction: column;
             padding-bottom: env(safe-area-inset-bottom);
         }
 
-        /* TOP SYSTEM BAR */
-        #sys-bar {
+        /* TOP LAYOUT - L1, R1 and Stacked Start/Select */
+        #top-row {
+            position: absolute;
+            top: 15px;
+            left: 0;
             width: 100%;
-            height: 15%;
+            height: 80px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 0 10vw;
+            align-items: flex-start;
+            padding: 0 5vw;
+            z-index: 1100;
         }
 
         .sys-btn {
-            width: 80px;
+            width: 65px;
             height: 35px;
-            background: #333;
-            border: 1px solid #555;
-            border-radius: 5px;
-            color: #aaa;
-            font-size: 11px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: #999;
+            font-size: 10px;
             font-weight: bold;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* MAIN CONTROLS AREA */
-        #main-controls {
-            flex: 1;
-            position: relative;
+        .sys-btn:active {
+            background: rgba(255, 255, 255, 0.25);
+            color: #fff;
+        }
+
+        #stacked-sys {
             display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        /* MAIN CONTROL ZONES */
+        #control-zones {
+            position: absolute;
+            top: 100px;
+            left: 0;
             width: 100%;
+            bottom: 0;
+            display: flex;
         }
 
         #joystick-zone {
@@ -121,7 +135,7 @@
             position: relative;
         }
 
-        /* ABXY DIAMOND - RESPONSIVE SPREAD */
+        /* ABXY DIAMOND - BOTTOM-BASED POSITIONING FOR RELIABILITY */
         .btn {
             position: absolute;
             width: var(--btn-size);
@@ -133,93 +147,54 @@
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.15);
             transition: transform 0.05s;
+            z-index: 1200;
         }
 
         .btn:active {
             transform: scale(0.9);
-            opacity: 0.8;
         }
 
-        /* Diamond Layout centered in Right Zone */
+        /* Uplifted Layout using Bottom% to handle iPhone X home indicator */
         #btn-Y {
-            top: 10%;
+            bottom: 70%;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(255, 255, 0, 0.4);
+            background: rgba(255, 255, 0, 0.35);
             border-color: yellow;
         }
 
-        /* Top */
         #btn-X {
-            top: 40%;
-            left: 10%;
-            background: rgba(0, 0, 255, 0.4);
+            bottom: 45%;
+            left: 8%;
+            background: rgba(0, 0, 255, 0.35);
             border-color: cyan;
         }
 
-        /* Left */
         #btn-B {
-            top: 40%;
-            right: 10%;
-            background: rgba(0, 255, 0, 0.4);
+            bottom: 45%;
+            right: 8%;
+            background: rgba(0, 255, 0, 0.35);
             border-color: lime;
         }
 
-        /* Right */
         #btn-A {
-            bottom: 10%;
+            bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(255, 0, 0, 0.4);
+            background: rgba(255, 0, 0, 0.35);
             border-color: red;
         }
 
-        /* Bottom */
-
-        /* Shoulder Buttons */
-        #btn-L {
-            position: absolute;
-            left: 5vw;
-            top: 0;
-            width: 60px;
-            height: 35px;
-            background: #222;
-            border-radius: 5px;
-            color: #666;
-            font-size: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #444;
-        }
-
-        #btn-R {
-            position: absolute;
-            right: 5vw;
-            top: 0;
-            width: 60px;
-            height: 35px;
-            background: #222;
-            border-radius: 5px;
-            color: #666;
-            font-size: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #444;
-        }
-
-        /* START OVERLAY */
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -230,8 +205,8 @@
             background: #ff4500;
             color: #fff;
             border: none;
-            padding: 15px 40px;
-            font-size: 1.2rem;
+            padding: 18px 45px;
+            font-size: 1.3rem;
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
@@ -244,22 +219,22 @@
     <div id="game-wrapper">
         <div id="game-container"></div>
         <div class="overlay" id="start-overlay">
-            <button class="start-btn" onclick="startGame()">V26: 点击开玩 (适配 iPhone X)</button>
+            <button class="start-btn" onclick="startGame()">点击开始游戏</button>
         </div>
     </div>
 
     <div id="custom-gamepad">
-        <div id="sys-bar">
-            <div class="sys-btn" id="btn-SELECT">SELECT</div>
-            <div class="sys-btn" id="btn-START">START</div>
+        <div id="top-row">
+            <div class="sys-btn" id="btn-L">L1</div>
+            <div id="stacked-sys">
+                <div class="sys-btn" id="btn-START">START</div>
+                <div class="sys-btn" id="btn-SELECT">SELECT</div>
+            </div>
+            <div class="sys-btn" id="btn-R">R1</div>
         </div>
 
-        <div id="main-controls">
-            <div id="btn-L">L1</div>
-            <div id="btn-R">R1</div>
-
+        <div id="control-zones">
             <div id="joystick-zone"></div>
-
             <div id="btns-zone">
                 <div class="btn" id="btn-Y">Y</div>
                 <div class="btn" id="btn-X">X</div>
@@ -270,88 +245,79 @@
     </div>
 
     <script>
-        function pressKey(code, key) {
-            window.dispatchEvent(new KeyboardEvent('keydown', { keyCode: code, key: key, bubbles: true }));
-        }
-        function releaseKey(code, key) {
-            window.dispatchEvent(new KeyboardEvent('keyup', { keyCode: code, key: key, bubbles: true }));
+        // INPUT ENGINE
+        function simulateKey(type, code, key) {
+            const props = { key, code, keyCode: code, which: code, bubbles: true, cancelable: true, view: window, composed: true };
+            const event = new KeyboardEvent(type, props);
+            document.dispatchEvent(event);
+            window.dispatchEvent(event);
+            if (document.activeElement) document.activeElement.dispatchEvent(new KeyboardEvent(type, props));
         }
 
         function setupButton(id, code, key) {
             const el = document.getElementById(id);
             if (!el) return;
-            el.addEventListener('touchstart', (e) => { e.preventDefault(); pressKey(code, key); el.style.background = 'rgba(255,255,255,0.5)'; }, { passive: false });
-            el.addEventListener('touchend', (e) => { e.preventDefault(); releaseKey(code, key); el.style.background = ''; }, { passive: false });
+            const start = (e) => { e.preventDefault(); simulateKey('keydown', code, key); el.style.opacity = '0.6'; };
+            const end = (e) => { e.preventDefault(); simulateKey('keyup', code, key); el.style.opacity = '1'; };
+            el.addEventListener('touchstart', start, { passive: false });
+            el.addEventListener('touchend', end, { passive: false });
+            el.addEventListener('mousedown', start);
+            el.addEventListener('mouseup', end);
+            el.addEventListener('mouseleave', end);
         }
 
         function startGame() {
+            if (window.AudioContext || window.webkitAudioContext) {
+                const AC = window.AudioContext || window.webkitAudioContext;
+                (new AC()).resume();
+            }
             document.getElementById('start-overlay').style.display = 'none';
 
-            window.EJS_settings = {
-                'save-state-location': 'browser',
-                'autosave': true,
-                'adUrl': 'about:blank'
-            };
-
+            window.EJS_settings = { 'save-state-location': 'browser', 'autosave': true, 'adUrl': 'about:blank' };
             window.EJS_player = '#game-container';
             window.EJS_core = 'fbneo';
             window.EJS_gameName = "Shock Troopers";
             window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
             window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
             window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
-
             window.EJS_startOnLoaded = true;
-            window.EJS_fullscreenOnLoaded = false;
             window.EJS_VirtualGamepad = false;
 
             const script = document.createElement('script');
             script.src = 'https://www.emulatorjs.com/loader.js';
             document.body.appendChild(script);
 
-            // NIPPLE JS - iPhone X Centered Ergo
             const manager = nipplejs.create({
                 zone: document.getElementById('joystick-zone'),
-                mode: 'static',
-                position: { left: '45%', top: '50%' },
-                color: 'white',
-                size: 130
+                mode: 'static', position: { left: '45%', top: '50%' },
+                color: 'white', size: 130
             });
 
-            let activeDirs = new Set();
-            const MAP = { 'up': 38, 'down': 40, 'left': 37, 'right': 39 };
-
+            let active = {};
+            const DIR = { 'up': 38, 'down': 40, 'left': 37, 'right': 39 };
             manager.on('dir:up dir:down dir:left dir:right', (evt, data) => {
                 const dir = data.direction.angle;
-                if (!activeDirs.has(dir)) {
-                    // Release others to prevent lock? No, NeoGeo supports diagonals.
-                    pressKey(MAP[dir], dir);
-                    activeDirs.add(dir);
-                }
+                if (!active[dir]) { simulateKey('keydown', DIR[dir], dir); active[dir] = true; }
+                for (let d in active) { if (d !== dir) { simulateKey('keyup', DIR[d], d); delete active[d]; } }
             });
-            manager.on('end', () => {
-                activeDirs.forEach(dir => releaseKey(MAP[dir], dir));
-                activeDirs.clear();
-            });
+            manager.on('end', () => { for (let d in active) simulateKey('keyup', DIR[d], d); active = {}; });
 
-            // Mappings (Standard FBNeo)
-            setupButton('btn-A', 88, 'x'); // A
-            setupButton('btn-B', 90, 'z'); // B
-            setupButton('btn-X', 67, 'c'); // C
-            setupButton('btn-Y', 86, 'v'); // D
+            setupButton('btn-A', 88, 'x');
+            setupButton('btn-B', 90, 'z');
+            setupButton('btn-X', 67, 'c');
+            setupButton('btn-Y', 86, 'v');
             setupButton('btn-START', 13, 'Enter');
             setupButton('btn-SELECT', 16, 'Shift');
             setupButton('btn-L', 81, 'q');
             setupButton('btn-R', 87, 'w');
 
-            // HEAVY SHIELD - Kill native DOM periodically
             setInterval(() => {
                 const native = document.getElementById('gp_touch_controls');
                 if (native) native.remove();
-
                 document.querySelectorAll('div[class*="ejs"], .ejs_menu').forEach(m => {
                     m.style.setProperty('z-index', '99999999', 'important');
                 });
-            }, 500);
+            }, 300);
         }
     </script>
 </body>
