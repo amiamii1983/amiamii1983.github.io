@@ -12,6 +12,7 @@
             --game-height: 70vw;
             --control-bg: #111;
             --btn-size: 15vw;
+            /* Slightly smaller for better spread */
         }
 
         * {
@@ -31,9 +32,10 @@
             overflow: hidden;
             display: block;
             position: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-        /* SHIELD: Hide native controls */
+        /* NUCLEAR SHIELD: Hide native controls */
         #gp_touch_controls,
         .gp_touch_button,
         .gp_touch_dpad,
@@ -44,6 +46,7 @@
             pointer-events: none !important;
         }
 
+        /* GAME AT TOP */
         #game-wrapper {
             position: absolute;
             top: 0;
@@ -69,66 +72,79 @@
             background: var(--control-bg);
             z-index: 1000;
             border-top: 1px solid #333;
+            /* SAFE AREA PADDING FOR IPHONE X */
             padding-bottom: env(safe-area-inset-bottom);
-            overflow: hidden;
         }
 
-        /* SYSTEM CENTERED KEYS (2 ROWS) */
-        #sys-keys {
+        /* TOP FUNCTION KEYS (L, R, START, SELECT) */
+        #top-functions {
             position: absolute;
             top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
-            z-index: 1100;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            pointer-events: none;
         }
 
-        .small-sys-btn {
+        #top-functions * {
+            pointer-events: auto;
+        }
+
+        .sys-btn {
+            position: absolute;
             width: 60px;
-            height: 30px;
+            height: 32px;
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid #444;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 4px;
-            color: #777;
-            font-size: 9px;
+            color: #888;
+            font-size: 10px;
             font-weight: bold;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* L/R SHOULDER - TOP SIDES */
-        .shoulder-btn {
-            position: absolute;
-            top: 10px;
-            width: 60px;
-            height: 35px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid #444;
-            border-radius: 6px;
-            color: #666;
-            font-size: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1100;
+        .sys-btn:active {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
         }
 
         #btn-L {
             left: 5vw;
+            top: 5px;
         }
 
         #btn-R {
             right: 5vw;
+            top: 5px;
         }
 
+        /* CENTERED START/SELECT (TWO ROWS) */
+        #center-sys {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .center-btn {
+            width: 70px;
+            height: 30px;
+        }
+
+        /* MAIN ACTION ZONES */
         #main-controls {
-            height: 100%;
+            position: absolute;
+            top: 80px;
+            left: 0;
             width: 100%;
-            position: relative;
+            bottom: 0;
+            display: flex;
         }
 
         #joystick-zone {
@@ -143,7 +159,7 @@
             position: relative;
         }
 
-        /* ABXY DIAMOND - OVERALL UPLIFTED */
+        /* ABXY DIAMOND - UPLIFTED FOR IPHONE X */
         .btn {
             position: absolute;
             width: var(--btn-size);
@@ -155,54 +171,60 @@
             align-items: center;
             justify-content: center;
             font-size: 1.1rem;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
             transition: transform 0.05s;
-            z-index: 1200;
         }
 
         .btn:active {
             transform: scale(0.9);
-            opacity: 0.8;
         }
 
-        /* Uplifted Layout to ensure 'A' is fully visible */
+        /* Uplifted Layout to ensure no cutoff on iPhone X */
+        /* Center of diamond is roughly 50% height of the zone, but we push it up */
         #btn-Y {
-            bottom: 62%;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(255, 255, 0, 0.4);
+            background: rgba(255, 255, 0, 0.3);
             border-color: yellow;
         }
 
+        /* Top: D */
         #btn-X {
-            bottom: 42%;
-            left: 10%;
-            background: rgba(0, 0, 255, 0.4);
+            top: 40%;
+            left: 5%;
+            background: rgba(0, 0, 255, 0.3);
             border-color: cyan;
         }
 
+        /* Left: C */
         #btn-B {
-            bottom: 42%;
-            right: 10%;
-            background: rgba(0, 255, 0, 0.4);
+            top: 40%;
+            right: 5%;
+            background: rgba(0, 255, 0, 0.3);
             border-color: lime;
         }
 
+        /* Right: B */
         #btn-A {
-            bottom: 22%;
+            top: 70%;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(255, 0, 0, 0.4);
+            background: rgba(255, 0, 0, 0.3);
             border-color: red;
         }
 
+        /* Bottom: A */
+
+        /* START OVERLAY */
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -213,11 +235,12 @@
             background: #ff4500;
             color: #fff;
             border: none;
-            padding: 15px 40px;
-            font-size: 1.2rem;
+            padding: 18px 45px;
+            font-size: 1.3rem;
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
         }
     </style>
 </head>
@@ -227,17 +250,19 @@
     <div id="game-wrapper">
         <div id="game-container"></div>
         <div class="overlay" id="start-overlay">
-            <button class="start-btn" onclick="startGame()">点击开玩</button>
+            <button class="start-btn" onclick="startGame()">点击开始游戏</button>
         </div>
     </div>
 
     <div id="custom-gamepad">
-        <div class="shoulder-btn" id="btn-L">L1</div>
-        <div class="shoulder-btn" id="btn-R">R1</div>
+        <div id="top-functions">
+            <div class="sys-btn" id="btn-L">L1</div>
+            <div class="sys-btn" id="btn-R">R1</div>
 
-        <div id="sys-keys">
-            <div class="small-sys-btn" id="btn-START">START</div>
-            <div class="small-sys-btn" id="btn-SELECT">SELECT</div>
+            <div id="center-sys">
+                <div class="sys-btn center-btn" id="btn-START">START</div>
+                <div class="sys-btn center-btn" id="btn-SELECT">SELECT</div>
+            </div>
         </div>
 
         <div id="main-controls">
@@ -252,25 +277,71 @@
     </div>
 
     <script>
-        function pressKey(code, key) {
-            window.dispatchEvent(new KeyboardEvent('keydown', { keyCode: code, key: key, bubbles: true }));
-        }
-        function releaseKey(code, key) {
-            window.dispatchEvent(new KeyboardEvent('keyup', { keyCode: code, key: key, bubbles: true }));
+        // ROBUST INPUT SIMULATION (Fixing "no response" issue)
+        function simulateKey(type, code, key) {
+            const eventProps = {
+                key: key,
+                code: code,
+                keyCode: code,
+                which: code,
+                bubbles: true,
+                cancelable: true,
+                view: window,
+                composed: true
+            };
+
+            // Dispatch to both document and window for maximum coverage
+            const event = new KeyboardEvent(type, eventProps);
+            document.dispatchEvent(event);
+            window.dispatchEvent(event);
+
+            // Some emulators also check the active element
+            if (document.activeElement && document.activeElement !== document.body) {
+                document.activeElement.dispatchEvent(new KeyboardEvent(type, eventProps));
+            }
         }
 
         function setupButton(id, code, key) {
             const el = document.getElementById(id);
             if (!el) return;
-            el.addEventListener('touchstart', (e) => { e.preventDefault(); pressKey(code, key); el.style.background = 'rgba(255,255,255,0.5)'; }, { passive: false });
-            el.addEventListener('touchend', (e) => { e.preventDefault(); releaseKey(code, key); el.style.background = ''; }, { passive: false });
+
+            const handleStart = (e) => {
+                e.preventDefault();
+                simulateKey('keydown', code, key);
+                el.style.opacity = '0.6';
+                el.style.transform = 'scale(0.9)';
+            };
+
+            const handleEnd = (e) => {
+                e.preventDefault();
+                simulateKey('keyup', code, key);
+                el.style.opacity = '1';
+                el.style.transform = '';
+            };
+
+            el.addEventListener('touchstart', handleStart, { passive: false });
+            el.addEventListener('touchend', handleEnd, { passive: false });
+            el.addEventListener('mousedown', handleStart);
+            el.addEventListener('mouseup', handleEnd);
+            el.addEventListener('mouseleave', handleEnd);
         }
 
         function startGame() {
+            // FIX SOUND: Resume AudioContext on user interaction
+            if (window.AudioContext || window.webkitAudioContext) {
+                const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                const tempCtx = new AudioCtx();
+                tempCtx.resume().then(() => {
+                    console.log("AudioContext resumed successfully.");
+                });
+            }
+
             document.getElementById('start-overlay').style.display = 'none';
 
             window.EJS_settings = {
-                'save-state-location': 'browser', 'autosave': true, 'adUrl': 'about:blank'
+                'save-state-location': 'browser',
+                'autosave': true,
+                'adUrl': 'about:blank'
             };
 
             window.EJS_player = '#game-container';
@@ -282,44 +353,68 @@
 
             window.EJS_startOnLoaded = true;
             window.EJS_fullscreenOnLoaded = false;
-            window.EJS_VirtualGamepad = false;
+            window.EJS_VirtualGamepad = false; // Officially disable
 
             const script = document.createElement('script');
             script.src = 'https://www.emulatorjs.com/loader.js';
             document.body.appendChild(script);
 
+            // NIPPLE JS - Ergonomically positioned for iPhone X
             const manager = nipplejs.create({
                 zone: document.getElementById('joystick-zone'),
                 mode: 'static',
-                position: { left: '45%', top: '55%' }, // Slightly lower the stick base relative to uplifted btns
-                color: 'white', size: 120
+                position: { left: '40%', top: '50%' },
+                color: 'white',
+                size: 130
             });
 
-            let activeDirs = new Set();
-            const MAP = { 'up': 38, 'down': 40, 'left': 37, 'right': 39 };
+            let activeKeys = {};
+            const DIR_MAP = { 'up': 38, 'down': 40, 'left': 37, 'right': 39 };
 
             manager.on('dir:up dir:down dir:left dir:right', (evt, data) => {
                 const dir = data.direction.angle;
-                if (!activeDirs.has(dir)) { pressKey(MAP[dir], dir); activeDirs.add(dir); }
+                // Press the new direction
+                if (!activeKeys[dir]) {
+                    simulateKey('keydown', DIR_MAP[dir], dir);
+                    activeKeys[dir] = true;
+                }
+                // Release others for clear direction (optional for NeoGeo, 
+                // but usually better for pure DPAD emulation)
+                for (let d in activeKeys) {
+                    if (d !== dir) {
+                        simulateKey('keyup', DIR_MAP[d], d);
+                        delete activeKeys[d];
+                    }
+                }
             });
-            manager.on('end', () => { activeDirs.forEach(dir => releaseKey(MAP[dir], dir)); activeDirs.clear(); });
 
-            setupButton('btn-A', 88, 'x');
-            setupButton('btn-B', 90, 'z');
-            setupButton('btn-X', 67, 'c');
-            setupButton('btn-Y', 86, 'v');
+            manager.on('end', () => {
+                for (let d in activeKeys) {
+                    simulateKey('keyup', DIR_MAP[d], d);
+                }
+                activeKeys = {};
+            });
+
+            // FBNeo Standard Keyboard Mappings
+            setupButton('btn-A', 88, 'x'); // A
+            setupButton('btn-B', 90, 'z'); // B
+            setupButton('btn-X', 67, 'c'); // C
+            setupButton('btn-Y', 86, 'v'); // D
             setupButton('btn-START', 13, 'Enter');
             setupButton('btn-SELECT', 16, 'Shift');
             setupButton('btn-L', 81, 'q');
             setupButton('btn-R', 87, 'w');
 
+            // PERMANENT SHIELD: Wipe native controls periodically
             setInterval(() => {
                 const native = document.getElementById('gp_touch_controls');
                 if (native) native.remove();
+
+                // Keep EmulatorJS UI menus clickable and on top
                 document.querySelectorAll('div[class*="ejs"], .ejs_menu').forEach(m => {
                     m.style.setProperty('z-index', '99999999', 'important');
                 });
-            }, 500);
+            }, 300);
         }
     </script>
 </body>
