@@ -7,10 +7,6 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>街机 突击骑兵</title>
     <style>
-        :root {
-            --game-top-height: 70vw;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -27,30 +23,24 @@
             position: fixed;
         }
 
-        /* 
-           V29 ARCHITECTURE: 
-           Official UI will be rendered INSIDE #game-container.
-           We make #game-container cover the WHOLE SCREEN, 
-           but we use EJS_VirtualGamepadSettings to push buttons to the bottom 30% area.
-        */
+        /* V31 Production Layout: Game at Top, Controls at Bottom */
         #game-container {
             width: 100vw;
             height: 100vh;
-            /* Full screen to accommodate official UI at bottom */
             position: absolute;
             top: 0;
             left: 0;
             z-index: 10;
         }
 
-        /* START OVERLAY */
+        /* MINIMAL START OVERLAY */
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.95);
+            background: #000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -62,10 +52,18 @@
             color: #fff;
             border: none;
             padding: 18px 45px;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
+        }
+
+        /* FORCE GAME CANVAS TO TOP 70VW */
+        #game-container iframe,
+        #game-container canvas {
+            max-height: 70vw !important;
+            top: 0 !important;
+            position: absolute !important;
         }
     </style>
 </head>
@@ -75,68 +73,67 @@
     <div id="game-container"></div>
 
     <div class="overlay" id="start-overlay">
-        <button class="start-btn" onclick="startGame()">点击开始游戏</button>
+        <button class="start-btn" onclick="startGame()">点击开玩</button>
     </div>
 
     <script>
         function startGame() {
-            // ROBUST SOUND FIX: Multiple context resume
-            const resumeAudio = () => {
+            // SOUND ENGINE WAKE-UP
+            try {
                 const AC = window.AudioContext || window.webkitAudioContext;
                 if (AC) {
                     const ctx = new AC();
-                    if (ctx.state === 'suspended') ctx.resume();
+                    ctx.resume();
+                    const b = ctx.createBuffer(1, 1, 22050);
+                    const s = ctx.createBufferSource();
+                    s.buffer = b; s.connect(ctx.destination); s.start(0);
                 }
-            };
-            resumeAudio();
+            } catch (e) { }
 
             document.getElementById('start-overlay').style.display = 'none';
 
-            // V29 OFFICIAL SETTINGS (The most stable way)
-            // Note: FBNeo Standard Mapping is A=1, B=0, X=3, Y=2
+            // V31 OFFICIAL API SETTINGS (0-100% of 100vh container)
             window.EJS_VirtualGamepadSettings = [
-                // 1. JOYSTICK - Moved away from the bottom-left corner
+                // JOYSTICK
                 {
                     type: "zone",
-                    location: "left",
-                    left: "14%", // 14% away from left edge
-                    top: "84%",  // Positioned in the middle of black area
+                    location: "left", left: "18%", top: "82%",
                     inputValues: ["Up", "Down", "Left", "Right"]
                 },
-                // 2. ABXY - Uplifted Diamond (XB Standard)
-                // Positioned relative to bottom (82% - 94% range)
+                // ABXY DIAMOND
                 {
                     type: "button", text: "A", input_value: 1,
-                    location: "right", right: "20%", top: "92%", size: "60px"
+                    location: "right", right: "22%", top: "88%", size: "65px"
                 },
                 {
                     type: "button", text: "B", input_value: 0,
-                    location: "right", right: "6%", top: "82%", size: "60px"
+                    location: "right", right: "8%", top: "78%", size: "65px"
                 },
                 {
                     type: "button", text: "X", input_value: 3,
-                    location: "right", right: "34%", top: "82%", size: "60px"
+                    location: "right", right: "36%", top: "78%", size: "65px"
                 },
                 {
                     type: "button", text: "Y", input_value: 2,
-                    location: "right", right: "20%", top: "72%", size: "60px"
+                    location: "right", right: "22%", top: "68%", size: "65px"
                 },
-                // 3. SYSTEM BAR (Split far apart)
+                // SHOULDER
                 {
                     type: "button", text: "L", input_value: 4,
-                    location: "left", left: "5%", top: "68%", size: "45px"
+                    location: "left", left: "6%", top: "65%", size: "50px"
                 },
                 {
                     type: "button", text: "R", input_value: 5,
-                    location: "right", right: "5%", top: "68%", size: "45px"
+                    location: "right", right: "6%", top: "65%", size: "50px"
+                },
+                // SYSTEM (Purely Functional, No Overlap)
+                {
+                    type: "button", text: "SELECT", input_value: 8,
+                    location: "center", left: "35%", top: "70%", size: "75x35"
                 },
                 {
                     type: "button", text: "START", input_value: 9,
-                    location: "center", left: "62%", top: "74%", size: "70x35"
-                },
-                {
-                    type: "button", text: "SELECT", input_value: 8,
-                    location: "center", left: "38%", top: "74%", size: "70x35"
+                    location: "center", left: "65%", top: "70%", size: "75x35"
                 }
             ];
 
@@ -151,21 +148,13 @@
             window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
 
             window.EJS_startOnLoaded = true;
-            window.EJS_fullscreenOnLoaded = false;
             window.EJS_VirtualGamepad = true;
 
-            // Final check on game start to ensure sound and UI
             window.EJS_onGameStart = function () {
-                resumeAudio();
-                // Ensure the game surface stays at the top via internal CSS injection
                 const style = document.createElement('style');
                 style.innerHTML = `
-                    #game-canvas, canvas { 
-                        position: fixed !important; 
-                        top: 0 !important; 
-                        height: var(--game-top-height) !important; 
-                        bottom: auto !important;
-                    }
+                    #game-canvas, canvas { position: absolute !important; top: 0 !important; max-height: 70vw !important; width: 100% !important; }
+                    .gp_touch_zone { background: rgba(255,255,255,0.05) !important; border-radius: 50% !important; }
                 `;
                 document.head.appendChild(style);
             };
