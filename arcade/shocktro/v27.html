@@ -1,0 +1,327 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>街机 突击骑兵</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.1/nipplejs.min.js"></script>
+    <style>
+        :root {
+            --game-height: 70vw;
+            --control-bg: #111;
+            --btn-size: 15vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            display: block;
+            position: fixed;
+        }
+
+        /* SHIELD: Hide native controls */
+        #gp_touch_controls,
+        .gp_touch_button,
+        .gp_touch_dpad,
+        .gp_touch_joystick {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        #game-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: var(--game-height);
+            z-index: 50;
+            transform: translateZ(0);
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CUSTOM GAMEPAD AREA */
+        #custom-gamepad {
+            position: absolute;
+            top: var(--game-height);
+            left: 0;
+            width: 100vw;
+            bottom: 0;
+            background: var(--control-bg);
+            z-index: 1000;
+            border-top: 1px solid #333;
+            padding-bottom: env(safe-area-inset-bottom);
+            overflow: hidden;
+        }
+
+        /* SYSTEM CENTERED KEYS (2 ROWS) */
+        #sys-keys {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            z-index: 1100;
+        }
+
+        .small-sys-btn {
+            width: 60px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #777;
+            font-size: 9px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* L/R SHOULDER - TOP SIDES */
+        .shoulder-btn {
+            position: absolute;
+            top: 10px;
+            width: 60px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #666;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1100;
+        }
+
+        #btn-L {
+            left: 5vw;
+        }
+
+        #btn-R {
+            right: 5vw;
+        }
+
+        #main-controls {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        #joystick-zone {
+            width: 50%;
+            height: 100%;
+            position: relative;
+        }
+
+        #btns-zone {
+            width: 50%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* ABXY DIAMOND - OVERALL UPLIFTED */
+        .btn {
+            position: absolute;
+            width: var(--btn-size);
+            height: var(--btn-size);
+            border-radius: 50%;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.05s;
+            z-index: 1200;
+        }
+
+        .btn:active {
+            transform: scale(0.9);
+            opacity: 0.8;
+        }
+
+        /* Uplifted Layout to ensure 'A' is fully visible */
+        #btn-Y {
+            bottom: 62%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 0, 0.4);
+            border-color: yellow;
+        }
+
+        #btn-X {
+            bottom: 42%;
+            left: 10%;
+            background: rgba(0, 0, 255, 0.4);
+            border-color: cyan;
+        }
+
+        #btn-B {
+            bottom: 42%;
+            right: 10%;
+            background: rgba(0, 255, 0, 0.4);
+            border-color: lime;
+        }
+
+        #btn-A {
+            bottom: 22%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 0, 0, 0.4);
+            border-color: red;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .start-btn {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-wrapper">
+        <div id="game-container"></div>
+        <div class="overlay" id="start-overlay">
+            <button class="start-btn" onclick="startGame()">点击开玩</button>
+        </div>
+    </div>
+
+    <div id="custom-gamepad">
+        <div class="shoulder-btn" id="btn-L">L1</div>
+        <div class="shoulder-btn" id="btn-R">R1</div>
+
+        <div id="sys-keys">
+            <div class="small-sys-btn" id="btn-START">START</div>
+            <div class="small-sys-btn" id="btn-SELECT">SELECT</div>
+        </div>
+
+        <div id="main-controls">
+            <div id="joystick-zone"></div>
+            <div id="btns-zone">
+                <div class="btn" id="btn-Y">Y</div>
+                <div class="btn" id="btn-X">X</div>
+                <div class="btn" id="btn-B">B</div>
+                <div class="btn" id="btn-A">A</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function pressKey(code, key) {
+            window.dispatchEvent(new KeyboardEvent('keydown', { keyCode: code, key: key, bubbles: true }));
+        }
+        function releaseKey(code, key) {
+            window.dispatchEvent(new KeyboardEvent('keyup', { keyCode: code, key: key, bubbles: true }));
+        }
+
+        function setupButton(id, code, key) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.addEventListener('touchstart', (e) => { e.preventDefault(); pressKey(code, key); el.style.background = 'rgba(255,255,255,0.5)'; }, { passive: false });
+            el.addEventListener('touchend', (e) => { e.preventDefault(); releaseKey(code, key); el.style.background = ''; }, { passive: false });
+        }
+
+        function startGame() {
+            document.getElementById('start-overlay').style.display = 'none';
+
+            window.EJS_settings = {
+                'save-state-location': 'browser', 'autosave': true, 'adUrl': 'about:blank'
+            };
+
+            window.EJS_player = '#game-container';
+            window.EJS_core = 'fbneo';
+            window.EJS_gameName = "Shock Troopers";
+            window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
+            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
+            window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
+
+            window.EJS_startOnLoaded = true;
+            window.EJS_fullscreenOnLoaded = false;
+            window.EJS_VirtualGamepad = false;
+
+            const script = document.createElement('script');
+            script.src = 'https://www.emulatorjs.com/loader.js';
+            document.body.appendChild(script);
+
+            const manager = nipplejs.create({
+                zone: document.getElementById('joystick-zone'),
+                mode: 'static',
+                position: { left: '45%', top: '55%' }, // Slightly lower the stick base relative to uplifted btns
+                color: 'white', size: 120
+            });
+
+            let activeDirs = new Set();
+            const MAP = { 'up': 38, 'down': 40, 'left': 37, 'right': 39 };
+
+            manager.on('dir:up dir:down dir:left dir:right', (evt, data) => {
+                const dir = data.direction.angle;
+                if (!activeDirs.has(dir)) { pressKey(MAP[dir], dir); activeDirs.add(dir); }
+            });
+            manager.on('end', () => { activeDirs.forEach(dir => releaseKey(MAP[dir], dir)); activeDirs.clear(); });
+
+            setupButton('btn-A', 88, 'x');
+            setupButton('btn-B', 90, 'z');
+            setupButton('btn-X', 67, 'c');
+            setupButton('btn-Y', 86, 'v');
+            setupButton('btn-START', 13, 'Enter');
+            setupButton('btn-SELECT', 16, 'Shift');
+            setupButton('btn-L', 81, 'q');
+            setupButton('btn-R', 87, 'w');
+
+            setInterval(() => {
+                const native = document.getElementById('gp_touch_controls');
+                if (native) native.remove();
+                document.querySelectorAll('div[class*="ejs"], .ejs_menu').forEach(m => {
+                    m.style.setProperty('z-index', '99999999', 'important');
+                });
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
