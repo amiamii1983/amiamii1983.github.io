@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://831014.xyz/posts/arcade-shocktr2/</loc>
+    <loc>https://831014.xyz/posts/arcadegame5/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/posts/arcade-shocktro/</loc>
+    <loc>https://831014.xyz/posts/arcadegame4/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -21,6 +21,15 @@
   
   <url>
     <loc>https://831014.xyz/arcade/shocktr2/index.html</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/arcade/shocktro/index.html</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -263,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/posts/fcgame3/</loc>
+    <loc>https://831014.xyz/posts/fcgame2/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -272,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/posts/fcgame2/</loc>
+    <loc>https://831014.xyz/posts/fcgame3/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -308,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/gbc/Pokemon-Puzzle-Challenge/index.html</loc>
+    <loc>https://831014.xyz/pce/Bomberman/index.html</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -317,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/pce/Bomberman/index.html</loc>
+    <loc>https://831014.xyz/gbc/Pokemon-Puzzle-Challenge/index.html</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -485,28 +494,14 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://831014.xyz/tags/%E6%B7%98%E9%87%91%E8%80%85/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://831014.xyz/tags/%E6%B0%94%E7%90%83%E5%A4%A7%E6%88%98/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -521,6 +516,20 @@
   
   <url>
     <loc>https://831014.xyz/tags/Mappy/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/tags/%E6%B7%98%E9%87%91%E8%80%85/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -618,20 +627,6 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/tags/GB/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://831014.xyz/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://831014.xyz/tags/game/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -661,6 +656,20 @@
   
   <url>
     <loc>https://831014.xyz/tags/%E7%82%B8%E5%BC%B9%E4%BA%BA/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/tags/GB/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://831014.xyz/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -744,6 +753,13 @@
   </url>
   
   <url>
+    <loc>https://831014.xyz/tags/bookmark/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://831014.xyz/tags/%E9%BE%99%E7%8F%A0/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -765,13 +781,6 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/tags/bookmark/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://831014.xyz/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -786,6 +795,13 @@
   </url>
   
   <url>
+    <loc>https://831014.xyz/tags/%E6%B3%A1%E6%B3%A1%E9%BE%99/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://831014.xyz/tags/NeoGeo/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -794,13 +810,6 @@
   
   <url>
     <loc>https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B52/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://831014.xyz/tags/%E6%B3%A1%E6%B3%A1%E9%BE%99/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -865,14 +874,14 @@
   </url>
   
   <url>
-    <loc>https://831014.xyz/categories/%E5%8A%A8%E6%BC%AB/</loc>
+    <loc>https://831014.xyz/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://831014.xyz/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://831014.xyz/categories/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
