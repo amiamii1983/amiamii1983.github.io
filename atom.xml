@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-11T14:29:57.867Z</updated>
+  <updated>2026-01-11T14:41:19.718Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GBA 蜡笔小新 呼风唤雨的电影乐园大冒险在线玩</title>
+    <link href="https://831014.xyz/posts/gbagame4/"/>
+    <id>https://831014.xyz/posts/gbagame4/</id>
+    <published>2026-01-11T14:45:00.000Z</published>
+    <updated>2026-01-11T14:41:19.718Z</updated>
+    
+    
+    <summary type="html">GBA 蜡笔小新 呼风唤雨的电影乐园大冒险在线玩，支持 WSAD 操控、自动存档与即时存档。经典 GBA 动作游戏。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="GBA" scheme="https://831014.xyz/tags/GBA/"/>
+    
+    <category term="GameBoyAdvance" scheme="https://831014.xyz/tags/GameBoyAdvance/"/>
+    
+    <category term="蜡笔小新" scheme="https://831014.xyz/tags/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>街机 突击骑兵2在线玩</title>
@@ -526,33 +555,6 @@
     <category term="GB" scheme="https://831014.xyz/tags/GB/"/>
     
     <category term="俄罗斯方块" scheme="https://831014.xyz/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>街机 泡泡龙在线玩</title>
-    <link href="https://831014.xyz/posts/arcadegame3/"/>
-    <id>https://831014.xyz/posts/arcadegame3/</id>
-    <published>2025-12-27T18:25:00.000Z</published>
-    <updated>2026-01-09T19:03:57.894Z</updated>
-    
-    
-    <summary type="html">街机 泡泡龙 在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
-    
-    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
-    
-    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
-    
-    <category term="泡泡龙" scheme="https://831014.xyz/tags/%E6%B3%A1%E6%B3%A1%E9%BE%99/"/>
     
   </entry>
   
