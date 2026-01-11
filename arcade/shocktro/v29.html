@@ -1,0 +1,180 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>街机 突击骑兵</title>
+    <style>
+        :root {
+            --game-top-height: 70vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            display: block;
+            position: fixed;
+        }
+
+        /* 
+           V29 ARCHITECTURE: 
+           Official UI will be rendered INSIDE #game-container.
+           We make #game-container cover the WHOLE SCREEN, 
+           but we use EJS_VirtualGamepadSettings to push buttons to the bottom 30% area.
+        */
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+            /* Full screen to accommodate official UI at bottom */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        /* START OVERLAY */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .start-btn {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 18px 45px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container"></div>
+
+    <div class="overlay" id="start-overlay">
+        <button class="start-btn" onclick="startGame()">点击开始游戏</button>
+    </div>
+
+    <script>
+        function startGame() {
+            // ROBUST SOUND FIX: Multiple context resume
+            const resumeAudio = () => {
+                const AC = window.AudioContext || window.webkitAudioContext;
+                if (AC) {
+                    const ctx = new AC();
+                    if (ctx.state === 'suspended') ctx.resume();
+                }
+            };
+            resumeAudio();
+
+            document.getElementById('start-overlay').style.display = 'none';
+
+            // V29 OFFICIAL SETTINGS (The most stable way)
+            // Note: FBNeo Standard Mapping is A=1, B=0, X=3, Y=2
+            window.EJS_VirtualGamepadSettings = [
+                // 1. JOYSTICK - Moved away from the bottom-left corner
+                {
+                    type: "zone",
+                    location: "left",
+                    left: "14%", // 14% away from left edge
+                    top: "84%",  // Positioned in the middle of black area
+                    inputValues: ["Up", "Down", "Left", "Right"]
+                },
+                // 2. ABXY - Uplifted Diamond (XB Standard)
+                // Positioned relative to bottom (82% - 94% range)
+                {
+                    type: "button", text: "A", input_value: 1,
+                    location: "right", right: "20%", top: "92%", size: "60px"
+                },
+                {
+                    type: "button", text: "B", input_value: 0,
+                    location: "right", right: "6%", top: "82%", size: "60px"
+                },
+                {
+                    type: "button", text: "X", input_value: 3,
+                    location: "right", right: "34%", top: "82%", size: "60px"
+                },
+                {
+                    type: "button", text: "Y", input_value: 2,
+                    location: "right", right: "20%", top: "72%", size: "60px"
+                },
+                // 3. SYSTEM BAR (Split far apart)
+                {
+                    type: "button", text: "L", input_value: 4,
+                    location: "left", left: "5%", top: "68%", size: "45px"
+                },
+                {
+                    type: "button", text: "R", input_value: 5,
+                    location: "right", right: "5%", top: "68%", size: "45px"
+                },
+                {
+                    type: "button", text: "START", input_value: 9,
+                    location: "center", left: "62%", top: "74%", size: "70x35"
+                },
+                {
+                    type: "button", text: "SELECT", input_value: 8,
+                    location: "center", left: "38%", top: "74%", size: "70x35"
+                }
+            ];
+
+            window.EJS_settings = {
+                'save-state-location': 'browser', 'autosave': true, 'adUrl': 'about:blank'
+            };
+            window.EJS_player = '#game-container';
+            window.EJS_core = 'fbneo';
+            window.EJS_gameName = "Shock Troopers";
+            window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
+            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
+            window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
+
+            window.EJS_startOnLoaded = true;
+            window.EJS_fullscreenOnLoaded = false;
+            window.EJS_VirtualGamepad = true;
+
+            // Final check on game start to ensure sound and UI
+            window.EJS_onGameStart = function () {
+                resumeAudio();
+                // Ensure the game surface stays at the top via internal CSS injection
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    #game-canvas, canvas { 
+                        position: fixed !important; 
+                        top: 0 !important; 
+                        height: var(--game-top-height) !important; 
+                        bottom: auto !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            };
+
+            const script = document.createElement('script');
+            script.src = 'https://www.emulatorjs.com/loader.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
