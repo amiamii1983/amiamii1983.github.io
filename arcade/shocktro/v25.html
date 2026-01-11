@@ -1,0 +1,312 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>街机 突击骑兵 (V25-Custom-Gamepad)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.1/nipplejs.min.js"></script>
+    <style>
+        :root {
+            --game-height: 70vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            display: block;
+        }
+
+        /* GAME AT TOP */
+        #game-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: var(--game-height);
+            z-index: 50;
+            transform: translateZ(0);
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CUSTOM GAMEPAD AREA */
+        #custom-gamepad {
+            position: absolute;
+            top: var(--game-height);
+            left: 0;
+            width: 100vw;
+            bottom: 0;
+            background: #111;
+            z-index: 1000;
+            border-top: 1px solid #333;
+            touch-action: none;
+        }
+
+        /* JOYSTICK CONTAINER */
+        #joystick-zone {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        /* BUTTONS CONTAINER */
+        #buttons-zone {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        .btn {
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.05s;
+        }
+
+        .btn:active {
+            transform: scale(0.9);
+            background: rgba(255, 69, 0, 0.5);
+            border-color: #ff4500;
+        }
+
+        /* ABXY Layout (Diamond) */
+        #btn-A {
+            right: 20%;
+            bottom: 15%;
+            background: rgba(255, 0, 0, 0.2);
+        }
+
+        /* Bottom */
+        #btn-B {
+            right: 5%;
+            bottom: 35%;
+            background: rgba(0, 255, 0, 0.2);
+        }
+
+        /* Right */
+        #btn-X {
+            right: 35%;
+            bottom: 35%;
+            background: rgba(0, 0, 255, 0.2);
+        }
+
+        /* Left */
+        #btn-Y {
+            right: 20%;
+            bottom: 55%;
+            background: rgba(255, 255, 0, 0.2);
+        }
+
+        /* Top */
+
+        /* System Buttons */
+        .sys-btn {
+            position: absolute;
+            width: 70px;
+            height: 35px;
+            background: #333;
+            border-radius: 5px;
+            color: #999;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+        }
+
+        #btn-START {
+            left: 50%;
+            bottom: 60%;
+            transform: translateX(-50%);
+        }
+
+        #btn-SELECT {
+            left: 50%;
+            bottom: 40%;
+            transform: translateX(-50%);
+        }
+
+        #btn-L {
+            left: 10%;
+            top: 10%;
+            width: 50px;
+        }
+
+        #btn-R {
+            right: 10%;
+            top: 10%;
+            width: 50px;
+        }
+
+        /* START OVERLAY */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .start-btn {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-wrapper">
+        <div id="game-container"></div>
+        <div class="overlay" id="start-overlay">
+            <button class="start-btn" onclick="startGame()">V25: 点击开玩 (自定义手柄)</button>
+        </div>
+    </div>
+
+    <div id="custom-gamepad">
+        <div id="joystick-zone"></div>
+        <div id="buttons-zone">
+            <div class="btn" id="btn-A">A</div>
+            <div class="btn" id="btn-B">B</div>
+            <div class="btn" id="btn-X">X</div>
+            <div class="btn" id="btn-Y">Y</div>
+        </div>
+        <div class="sys-btn" id="btn-START">START</div>
+        <div class="sys-btn" id="btn-SELECT">SELECT</div>
+        <div class="sys-btn" id="btn-L">L</div>
+        <div class="sys-btn" id="btn-R">R</div>
+    </div>
+
+    <script>
+        // INPUT SIMULATION ENGINE
+        function pressKey(code, key) {
+            window.dispatchEvent(new KeyboardEvent('keydown', { keyCode: code, key: key, bubbles: true }));
+        }
+        function releaseKey(code, key) {
+            window.dispatchEvent(new KeyboardEvent('keyup', { keyCode: code, key: key, bubbles: true }));
+        }
+
+        function setupButton(id, code, key) {
+            const el = document.getElementById(id);
+            el.addEventListener('touchstart', (e) => { e.preventDefault(); pressKey(code, key); }, { passive: false });
+            el.addEventListener('touchend', (e) => { e.preventDefault(); releaseKey(code, key); }, { passive: false });
+            // Support mouse for testing
+            el.addEventListener('mousedown', (e) => { pressKey(code, key); });
+            el.addEventListener('mouseup', (e) => { releaseKey(code, key); });
+        }
+
+        function startGame() {
+            document.getElementById('start-overlay').style.display = 'none';
+
+            window.EJS_settings = {
+                'save-state-location': 'browser',
+                'autosave': true,
+                'adUrl': 'about:blank'
+            };
+
+            window.EJS_player = '#game-container';
+            window.EJS_core = 'fbneo';
+            window.EJS_gameName = "Shock Troopers";
+            window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
+            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
+            window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
+
+            window.EJS_startOnLoaded = true;
+            window.EJS_fullscreenOnLoaded = false;
+            window.EJS_VirtualGamepad = false; // DISABLE BUILT-IN UI
+
+            const script = document.createElement('script');
+            script.src = 'https://www.emulatorjs.com/loader.js';
+            document.body.appendChild(script);
+
+            // INITIALIZE JOYSTICK
+            const manager = nipplejs.create({
+                zone: document.getElementById('joystick-zone'),
+                mode: 'static',
+                position: { left: '25%', top: '50%' },
+                color: 'white',
+                size: 120
+            });
+
+            let currentDir = null;
+            manager.on('dir:up dir:down dir:left dir:right', (evt, data) => {
+                const dir = data.direction.angle;
+                if (currentDir && currentDir !== dir) releaseKey(getDirCode(currentDir), currentDir);
+                pressKey(getDirCode(dir), dir);
+                currentDir = dir;
+            });
+            manager.on('end', () => {
+                if (currentDir) releaseKey(getDirCode(currentDir), currentDir);
+                currentDir = null;
+            });
+
+            function getDirCode(dir) {
+                if (dir === 'up') return 38;
+                if (dir === 'down') return 40;
+                if (dir === 'left') return 37;
+                if (dir === 'right') return 39;
+            }
+
+            // INITIALIZE BUTTONS (Map to EJS defaults)
+            setupButton('btn-A', 88, 'x'); // A -> X
+            setupButton('btn-B', 90, 'z'); // B -> Z
+            setupButton('btn-X', 67, 'c'); // X -> C
+            setupButton('btn-Y', 86, 'v'); // Y -> V
+            setupButton('btn-START', 13, 'Enter');
+            setupButton('btn-SELECT', 16, 'Shift');
+            setupButton('btn-L', 81, 'q');
+            setupButton('btn-R', 87, 'w');
+
+            // Keep menus above
+            setInterval(() => {
+                document.querySelectorAll('div[class*="ejs"], .ejs_menu').forEach(m => {
+                    m.style.setProperty('z-index', '99999999', 'important');
+                });
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

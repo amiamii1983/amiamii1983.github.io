@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-11T13:15:45.872Z</updated>
+  <updated>2026-01-11T13:21:41.603Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://831014.xyz/posts/shocktro/"/>
     <id>https://831014.xyz/posts/shocktro/</id>
     <published>2026-01-11T08:15:00.000Z</published>
-    <updated>2026-01-11T13:15:45.872Z</updated>
+    <updated>2026-01-11T13:21:41.603Z</updated>
     
     
     <summary type="html">街机 突击骑兵在线玩，支持 WSAD 操控、投币开始与即时存档。NeoGeo 经典俯视角动作射击神作。</summary>
@@ -525,9 +525,9 @@
     <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
     
-    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
-    
     <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
     
     <category term="GB" scheme="https://831014.xyz/tags/GB/"/>
     
@@ -552,9 +552,9 @@
     <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
     
-    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
-    
     <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
     
     <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
     
