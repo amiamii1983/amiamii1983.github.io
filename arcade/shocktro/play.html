@@ -56,9 +56,6 @@
             background: #111;
             z-index: 10;
             border-top: 2px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         /* THE NUCLEAR OVERRIDE FOR BUTTONS */
@@ -71,6 +68,80 @@
             z-index: 999999 !important;
             background: transparent !important;
             pointer-events: auto !important;
+        }
+
+        /* ERGONOMIC LAYOUT (V20) */
+        /* Left side: Navigation (D-pad/Joystick) */
+        #gp_touch_controls .gp_touch_dpad,
+        #gp_touch_controls .gp_touch_joystick {
+            left: 5% !important;
+            bottom: 10% !important;
+            transform: scale(1.2) !important;
+        }
+
+        /* Right side: Action Buttons (ABXY) */
+        /* We use CSS grid or precise positioning to spread them out */
+        #gp_touch_controls .gp_touch_buttons_container {
+            right: 5% !important;
+            bottom: 15% !important;
+            width: 40% !important;
+            /* Wider area to spread ABXY */
+            height: 40% !important;
+            display: block !important;
+        }
+
+        /* Space out ABXY for Anti-Mistouch */
+        /* Individual button positioning relative to container */
+        .gp_touch_button_y {
+            top: 0 !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        /* Top Y */
+        .gp_touch_button_a {
+            bottom: 0 !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        /* Bottom A */
+        .gp_touch_button_x {
+            left: 0 !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        /* Left X */
+        .gp_touch_button_b {
+            right: 0 !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        /* Right B */
+
+        /* L/R and Start/Select separation */
+        .gp_touch_button_l {
+            left: 5% !important;
+            top: 5% !important;
+        }
+
+        .gp_touch_button_r {
+            right: 5% !important;
+            top: 5% !important;
+        }
+
+        .gp_touch_button_start {
+            left: 50% !important;
+            top: 5% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        .gp_touch_button_select {
+            left: 50% !important;
+            top: 20% !important;
+            transform: translateX(-50%) !important;
         }
 
         /* START OVERLAY */
@@ -111,9 +182,7 @@
         </div>
     </div>
 
-    <div id="controls-area">
-        <span style="color:#444; font-size: 12px;">按键控制区</span>
-    </div>
+    <div id="controls-area"></div>
 
     <script>
         function startGame() {
@@ -138,14 +207,15 @@
             window.EJS_fullscreenOnLoaded = false;
             window.EJS_VirtualGamepad = true;
 
-            // V19: Add L and R and A/B/X/Y
-            window.EJS_Buttons = ['A', 'B', 'X', 'Y', 'L', 'R', 'Start', 'Select'];
+            // V20: Use 12 buttons and enable Joystick for better touch precision
+            window.EJS_Buttons = 12;
+            window.EJS_Joystick = true; // Use Joystick instead of just D-pad
 
             const script = document.createElement('script');
             script.src = 'https://www.emulatorjs.com/loader.js';
             document.body.appendChild(script);
 
-            // AGGRESSIVE WATCHER V19
+            // AGGRESSIVE WATCHER V20 (Remapping and spreading)
             const moveAndRemapControls = () => {
                 const controls = document.getElementById('gp_touch_controls');
                 if (controls) {
@@ -154,34 +224,28 @@
                     controls.style.setProperty('height', 'calc(100vh - ' + gameHeight + ')', 'important');
                     controls.style.setProperty('position', 'fixed', 'important');
 
-                    // ABXY Remapping to Xbox Style (Visual Only + Mapping Check)
-                    // EJS default: Top-X, Bottom-B, Left-Y, Right-A
-                    // Requested: Top-Y, Bottom-A, Left-X, Right-B
-                    const btnA = controls.querySelector('.gp_touch_button_a');
-                    const btnB = controls.querySelector('.gp_touch_button_b');
-                    const btnX = controls.querySelector('.gp_touch_button_x');
-                    const btnY = controls.querySelector('.gp_touch_button_y');
+                    // ABXY Labels
+                    const btnA = controls.querySelector('.gp_touch_button_a'); // Right
+                    const btnB = controls.querySelector('.gp_touch_button_b'); // Bottom
+                    const btnX = controls.querySelector('.gp_touch_button_x'); // Top
+                    const btnY = controls.querySelector('.gp_touch_button_y'); // Left
 
-                    // We swap labels to match user's requested layout
-                    // Right button -> now says B
                     if (btnA && btnA.innerHTML !== 'B') btnA.innerHTML = 'B';
-                    // Bottom button -> now says A
                     if (btnB && btnB.innerHTML !== 'A') btnB.innerHTML = 'A';
-                    // Left button -> now says X
-                    if (btnY && btnY.innerHTML !== 'X') btnY.innerHTML = 'X';
-                    // Top button -> now says Y
                     if (btnX && btnX.innerHTML !== 'Y') btnX.innerHTML = 'Y';
+                    if (btnY && btnY.innerHTML !== 'X') btnY.innerHTML = 'X';
 
-                    // Note: This changes visual labels. 
-                    // If user needs the logic to match, they might need to remap in game menu, 
-                    // or I can try remapping window.EJS_defaultControls here.
+                    // Joystick/Dpad scale for easier touch
+                    const dpad = controls.querySelector('.gp_touch_dpad') || controls.querySelector('.gp_touch_joystick');
+                    if (dpad) {
+                        dpad.style.setProperty('transform', 'scale(1.2)', 'important');
+                        dpad.style.setProperty('left', '20px', 'important');
+                        dpad.style.setProperty('bottom', '20px', 'important');
+                    }
                 }
             };
 
             setInterval(moveAndRemapControls, 200);
-
-            // Final Suggestion: Xbox layout is better for modern users!
-            console.log("V19 Applied: Xbox Layout (Left-X, Top-Y, Bottom-A, Right-B) + L/R support.");
         }
     </script>
 </body>
