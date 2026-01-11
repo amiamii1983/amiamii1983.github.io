@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-11T13:51:37.788Z</updated>
+  <updated>2026-01-10T05:40:00.208Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,66 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>街机 突击骑兵在线玩</title>
-    <link href="https://831014.xyz/posts/shocktro/"/>
-    <id>https://831014.xyz/posts/shocktro/</id>
-    <published>2026-01-11T08:15:00.000Z</published>
-    <updated>2026-01-11T13:51:37.788Z</updated>
-    
-    
-    <summary type="html">街机 突击骑兵在线玩，支持 WSAD 操控、投币开始与即时存档。NeoGeo 经典俯视角动作射击神作。</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
-    
-    <category term="Arcade" scheme="https://831014.xyz/tags/Arcade/"/>
-    
-    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
-    
-    <category term="Action" scheme="https://831014.xyz/tags/Action/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>街机 突击骑兵2在线玩</title>
-    <link href="https://831014.xyz/posts/shocktr2/"/>
-    <id>https://831014.xyz/posts/shocktr2/</id>
-    <published>2026-01-10T06:38:00.000Z</published>
-    <updated>2026-01-11T06:00:19.534Z</updated>
-    
-    
-    <summary type="html">街机 突击骑兵2在线玩，支持 WSAD 操控、投币开始与即时存档。NeoGeo 经典俯视角动作射击神作。</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
-    
-    <category term="Arcade" scheme="https://831014.xyz/tags/Arcade/"/>
-    
-    <category term="FBNeo" scheme="https://831014.xyz/tags/FBNeo/"/>
-    
-    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
-    
-  </entry>
   
   <entry>
     <title>GBC 超级马里奥乐园2六个金币DX在线玩</title>
@@ -97,11 +37,11 @@
     
     <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
+    <category term="GBC" scheme="https://831014.xyz/tags/GBC/"/>
+    
     <category term="马里奥" scheme="https://831014.xyz/tags/%E9%A9%AC%E9%87%8C%E5%A5%A5/"/>
     
     <category term="Super Mario" scheme="https://831014.xyz/tags/Super-Mario/"/>
-    
-    <category term="GBC" scheme="https://831014.xyz/tags/GBC/"/>
     
     <category term="GameBoyColor" scheme="https://831014.xyz/tags/GameBoyColor/"/>
     
@@ -163,11 +103,11 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
     <category term="兔宝宝" scheme="https://831014.xyz/tags/%E5%85%94%E5%AE%9D%E5%AE%9D/"/>
     
     <category term="Tiny Toon" scheme="https://831014.xyz/tags/Tiny-Toon/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
   </entry>
   
@@ -388,9 +328,9 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
-    <category term="快打旋风" scheme="https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/"/>
-    
     <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="快打旋风" scheme="https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/"/>
     
   </entry>
   
@@ -449,6 +389,60 @@
     <category term="射击" scheme="https://831014.xyz/tags/%E5%B0%84%E5%87%BB/"/>
     
     <category term="兵蜂" scheme="https://831014.xyz/tags/%E5%85%B5%E8%9C%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>街机 突击骑兵2在线玩</title>
+    <link href="https://831014.xyz/posts/arcade-shocktr2/"/>
+    <id>https://831014.xyz/posts/arcade-shocktr2/</id>
+    <published>2025-12-29T16:24:00.000Z</published>
+    <updated>2026-01-11T14:00:30.751Z</updated>
+    
+    
+    <summary type="html">经典街机游戏《突击骑兵2》(Shock Troopers - 2nd Squad)在线玩，支持 WSAD 操控、自动存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
+    
+    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
+    
+    <category term="突击骑兵2" scheme="https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B52/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>街机 突击骑兵在线玩</title>
+    <link href="https://831014.xyz/posts/arcade-shocktro/"/>
+    <id>https://831014.xyz/posts/arcade-shocktro/</id>
+    <published>2025-12-29T16:23:00.000Z</published>
+    <updated>2026-01-11T14:00:16.266Z</updated>
+    
+    
+    <summary type="html">经典街机游戏《突击骑兵》(Shock Troopers)在线玩，支持 WSAD 操控、自动存档。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
+    
+    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
+    
+    <category term="突击骑兵" scheme="https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B5/"/>
     
   </entry>
   
