@@ -39,9 +39,9 @@
     
     <category term="Arcade" scheme="https://831014.xyz/tags/Arcade/"/>
     
-    <category term="Action" scheme="https://831014.xyz/tags/Action/"/>
-    
     <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
+    
+    <category term="Action" scheme="https://831014.xyz/tags/Action/"/>
     
   </entry>
   
@@ -70,9 +70,9 @@
     
     <category term="Arcade" scheme="https://831014.xyz/tags/Arcade/"/>
     
-    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
-    
     <category term="FBNeo" scheme="https://831014.xyz/tags/FBNeo/"/>
+    
+    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
     
   </entry>
   
@@ -525,13 +525,13 @@
     <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
     
+    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
     <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
     
     <category term="GB" scheme="https://831014.xyz/tags/GB/"/>
     
     <category term="俄罗斯方块" scheme="https://831014.xyz/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/"/>
-    
-    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
     
   </entry>
   
@@ -552,9 +552,9 @@
     <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
     
-    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
-    
     <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="在线试玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%8E%A9/"/>
     
     <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
     

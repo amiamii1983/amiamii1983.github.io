@@ -28,9 +28,9 @@
             
             <tag> Arcade </tag>
             
-            <tag> Action </tag>
-            
             <tag> NeoGeo </tag>
+            
+            <tag> Action </tag>
             
         </tags>
       
@@ -65,9 +65,9 @@
             
             <tag> Arcade </tag>
             
-            <tag> NeoGeo </tag>
-            
             <tag> FBNeo </tag>
+            
+            <tag> NeoGeo </tag>
             
         </tags>
       
@@ -622,13 +622,13 @@
       
         <tags>
             
+            <tag> 益智 </tag>
+            
             <tag> 在线试玩 </tag>
             
             <tag> GB </tag>
             
             <tag> 俄罗斯方块 </tag>
-            
-            <tag> 益智 </tag>
             
         </tags>
       
@@ -655,9 +655,9 @@
       
         <tags>
             
-            <tag> 在线试玩 </tag>
-            
             <tag> 益智 </tag>
+            
+            <tag> 在线试玩 </tag>
             
             <tag> 街机 </tag>
             
