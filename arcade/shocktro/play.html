@@ -1,0 +1,172 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>街机 突击骑兵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* NUCLEAR RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            display: block;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* V11/V12 TRAP CONTAINER */
+        #game-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            /* Force Aspect Ratio Height: 320/224 = ~1.428. WinHeight = 70vw */
+            /* This is mathematically correct for NeoGeo on ANY screen width */
+            height: 70vw;
+            background: #000;
+            z-index: 10;
+            transform: translateZ(0);
+            /* The Trap */
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CONTROLS AREA BELOW */
+        #controls-area {
+            position: absolute;
+            top: 70vw;
+            left: 0;
+            width: 100vw;
+            bottom: 0;
+            background: #111;
+            z-index: 20;
+            border-top: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Force Global Touch Controls Down via CSS (Mobile Only Priority) */
+        /* We'll handle this mainly via JS for precision, but keep a CSS fallback */
+        #gp_touch_controls {
+            /* Default hidden or managed by EJS on Desktop */
+        }
+
+        /* SIMPLE OVERLAY */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+        }
+
+        .start-btn {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .start-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-wrapper">
+        <div id="game-container"></div>
+        <div class="overlay" id="start-overlay">
+            <button class="start-btn" id="start-btn" onclick="startGame()">点击开玩</button>
+        </div>
+    </div>
+
+    <div id="controls-area">
+        <span style="color:#555; font-size: 12px;">虚拟按键区域</span>
+    </div>
+
+    <!-- EJS Setup -->
+    <script>
+        function startGame() {
+            document.getElementById('start-overlay').style.display = 'none';
+
+            // Detect Mobile
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            // Settings 
+            window.EJS_settings = {
+                'save-state-location': 'browser',
+                'autosave': true,
+                'adUrl': 'about:blank'
+            };
+
+            window.EJS_player = '#game-container';
+            window.EJS_core = 'fbneo';
+            window.EJS_gameName = "Shock Troopers";
+            window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
+            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
+            window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
+
+            window.EJS_startOnLoaded = true;
+            window.EJS_fullscreenOnLoaded = false;
+
+            // Let EJS decide on gamepad unless we are strictly on mobile?
+            // Shocktr2 sets this to false. To be safe, we start false.
+            // EJS auto-detects touch devices usually.
+            // If user forces detection, we can toggle.
+            // window.EJS_VirtualGamepad = isMobile; 
+
+            // Load script dynamically
+            const script = document.createElement('script');
+            script.src = 'https://www.emulatorjs.com/loader.js';
+            document.body.appendChild(script);
+
+            // MOBILE ONLY: Force Controls Down Watcher
+            // This prevents the loop from running on Desktop and messing with potential gamepad overlays
+            if (isMobile) {
+                setInterval(() => {
+                    const controls = document.getElementById('gp_touch_controls');
+                    if (controls) {
+                        controls.style.top = '70vw';
+                        controls.style.height = 'calc(100vh - 70vw)';
+                        controls.style.position = 'fixed';
+                        controls.style.bottom = '0';
+                        controls.style.left = '0';
+                        controls.style.zIndex = '99999';
+                    }
+                }, 500);
+            }
+        }
+    </script>
+</body>
+
+</html>
