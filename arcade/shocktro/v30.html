@@ -1,0 +1,196 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>街机 突击骑兵 (V30-Final)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #111;
+            overflow: hidden;
+            display: block;
+            position: fixed;
+        }
+
+        /* 
+           V30 STRATEGY: 
+           We make game-container FULL SCREEN (100vh).
+           The game canvas will be pinned to the TOP (70vw height).
+           The native controls will be re-positioned to the BOTTOM BLACK AREA via official API.
+        */
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        /* START OVERLAY */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.98);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            color: #fff;
+            gap: 20px;
+        }
+
+        .start-btn {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(255, 69, 0, 0.5);
+        }
+
+        .tip {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* ENSURE GAME SURFACE STAYS AT TOP */
+        #game-container iframe,
+        #game-container canvas {
+            max-height: 70vw !important;
+            top: 0 !important;
+            position: absolute !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container"></div>
+
+    <div class="overlay" id="start-overlay">
+        <button class="start-btn" onclick="startGame()">解锁音频并开玩</button>
+        <p class="tip">提示：如果没声音，请检查静音模式</p>
+    </div>
+
+    <script>
+        function startGame() {
+            // ROBUST SOUND UNLOCK (iOS 14+)
+            try {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                if (AudioContext) {
+                    const ctx = new AudioContext();
+                    ctx.resume();
+                    // Play silent buffer to prime
+                    const buffer = ctx.createBuffer(1, 1, 22050);
+                    const source = ctx.createBufferSource();
+                    source.buffer = buffer;
+                    source.connect(ctx.destination);
+                    source.start(0);
+                }
+            } catch (e) { console.error("Sound unlock failed", e); }
+
+            document.getElementById('start-overlay').style.display = 'none';
+
+            // V30 OFFICIAL API RE-POSITIONING
+            // Coordinates are 0-100% of the game-container (which is 100vh)
+            // Game is top 0-35% (approx 70vw). Controls should be 40-100%.
+            window.EJS_VirtualGamepadSettings = [
+                // JOYSTICK: Moved away from the corner
+                {
+                    type: "zone",
+                    location: "left",
+                    left: "18%",    // 18% from left (away from edge)
+                    top: "82%",     // Vertical center of black area
+                    inputValues: ["Up", "Down", "Left", "Right"]
+                },
+                // ABXY DIAMOND (Uplifted to avoid bottom bezel)
+                {
+                    type: "button", text: "A", input_value: 1,
+                    location: "right", right: "22%", top: "88%", size: "65px"
+                },
+                {
+                    type: "button", text: "B", input_value: 0,
+                    location: "right", right: "8%", top: "78%", size: "65px"
+                },
+                {
+                    type: "button", text: "X", input_value: 3,
+                    location: "right", right: "36%", top: "78%", size: "65px"
+                },
+                {
+                    type: "button", text: "Y", input_value: 2,
+                    location: "right", right: "22%", top: "68%", size: "65px"
+                },
+                // SHOULDER
+                {
+                    type: "button", text: "L", input_value: 4,
+                    location: "left", left: "6%", top: "65%", size: "50px"
+                },
+                {
+                    type: "button", text: "R", input_value: 5,
+                    location: "right", right: "6%", top: "65%", size: "50px"
+                },
+                // SYSTEM: Widely separated to avoid text overlap
+                {
+                    type: "button", text: "SELECT", input_value: 8,
+                    location: "center", left: "35%", top: "70%", size: "75x35"
+                },
+                {
+                    type: "button", text: "START", input_value: 9,
+                    location: "center", left: "65%", top: "70%", size: "75x35"
+                }
+            ];
+
+            window.EJS_settings = {
+                'save-state-location': 'browser',
+                'autosave': true,
+                'adUrl': 'about:blank'
+            };
+            window.EJS_player = '#game-container';
+            window.EJS_core = 'fbneo';
+            window.EJS_gameName = "Shock Troopers";
+            window.EJS_biosUrl = 'https://831014.xyz/arcade/neogeo.zip';
+            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktro/shocktro.zip';
+            window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
+
+            window.EJS_startOnLoaded = true;
+            window.EJS_VirtualGamepad = true; // Use official for stability
+
+            // Forcing CSS into the loader's shadow or frame
+            window.EJS_onGameStart = function () {
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    #game-canvas { position: absolute !important; top: 0 !important; max-height: 70vw !important; width: 100% !important; }
+                    canvas { position: absolute !important; top: 0 !important; max-height: 70vw !important; width: 100% !important; }
+                    /* Force transparency on joystick zone if needed */
+                    .gp_touch_zone { background: rgba(255,255,255,0.05) !important; border-radius: 50% !important; }
+                `;
+                document.head.appendChild(style);
+            };
+
+            const script = document.createElement('script');
+            script.src = 'https://www.emulatorjs.com/loader.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
