@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>街机 突击骑兵</title>
+    <title>街机 突击骑兵 (V21-DEBUG)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
@@ -29,6 +29,24 @@
             overflow: hidden;
             display: block;
             font-family: 'Outfit', sans-serif;
+        }
+
+        /* DEBUG BANNER */
+        #v21-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: #ff00ff;
+            color: white;
+            font-size: 10px;
+            z-index: 99999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            opacity: 0.8;
         }
 
         #game-wrapper {
@@ -66,82 +84,37 @@
             left: 0 !important;
             width: 100vw !important;
             z-index: 999999 !important;
-            background: transparent !important;
+            background: rgba(255, 0, 0, 0.05) !important;
+            /* Visual Debug Red Tint */
             pointer-events: auto !important;
+            border: 1px solid rgba(255, 0, 0, 0.3) !important;
+            /* Visual Border */
         }
 
-        /* ERGONOMIC LAYOUT (V20) */
-        /* Left side: Navigation (D-pad/Joystick) */
+        /* ERGONOMIC LAYOUT (V21) */
         #gp_touch_controls .gp_touch_dpad,
         #gp_touch_controls .gp_touch_joystick {
             left: 5% !important;
             bottom: 10% !important;
-            transform: scale(1.2) !important;
+            transform: scale(1.3) !important;
+            /* Massive D-Pad */
         }
 
-        /* Right side: Action Buttons (ABXY) */
-        /* We use CSS grid or precise positioning to spread them out */
         #gp_touch_controls .gp_touch_buttons_container {
             right: 5% !important;
-            bottom: 15% !important;
-            width: 40% !important;
+            bottom: 10% !important;
+            width: 50vw !important;
             /* Wider area to spread ABXY */
-            height: 40% !important;
+            height: 50% !important;
+            /* Taller area */
             display: block !important;
+            transform: scale(1.1) !important;
+            /* Comfort scale */
         }
 
-        /* Space out ABXY for Anti-Mistouch */
-        /* Individual button positioning relative to container */
-        .gp_touch_button_y {
-            top: 0 !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-        }
-
-        /* Top Y */
-        .gp_touch_button_a {
-            bottom: 0 !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-        }
-
-        /* Bottom A */
-        .gp_touch_button_x {
-            left: 0 !important;
-            top: 50% !important;
-            transform: translateY(-50%) !important;
-        }
-
-        /* Left X */
-        .gp_touch_button_b {
-            right: 0 !important;
-            top: 50% !important;
-            transform: translateY(-50%) !important;
-        }
-
-        /* Right B */
-
-        /* L/R and Start/Select separation */
-        .gp_touch_button_l {
-            left: 5% !important;
-            top: 5% !important;
-        }
-
-        .gp_touch_button_r {
-            right: 5% !important;
-            top: 5% !important;
-        }
-
-        .gp_touch_button_start {
-            left: 50% !important;
-            top: 5% !important;
-            transform: translateX(-50%) !important;
-        }
-
-        .gp_touch_button_select {
-            left: 50% !important;
-            top: 20% !important;
-            transform: translateX(-50%) !important;
+        /* Ensure individual buttons are spread out within the container */
+        .gp_touch_buttons_container>div {
+            transition: all 0.2s;
         }
 
         /* START OVERLAY */
@@ -175,6 +148,8 @@
 
 <body>
 
+    <div id="v21-banner">V21: ERGONOMIC-DEBUG-ACTIVE (X/Y-TAGS)</div>
+
     <div id="game-wrapper">
         <div id="game-container"></div>
         <div class="overlay" id="start-overlay">
@@ -207,15 +182,14 @@
             window.EJS_fullscreenOnLoaded = false;
             window.EJS_VirtualGamepad = true;
 
-            // V20: Use 12 buttons and enable Joystick for better touch precision
             window.EJS_Buttons = 12;
-            window.EJS_Joystick = true; // Use Joystick instead of just D-pad
+            window.EJS_Joystick = true;
 
             const script = document.createElement('script');
             script.src = 'https://www.emulatorjs.com/loader.js';
             document.body.appendChild(script);
 
-            // AGGRESSIVE WATCHER V20 (Remapping and spreading)
+            // AGGRESSIVE WATCHER V21 (Remapping and spreading)
             const moveAndRemapControls = () => {
                 const controls = document.getElementById('gp_touch_controls');
                 if (controls) {
@@ -225,27 +199,34 @@
                     controls.style.setProperty('position', 'fixed', 'important');
 
                     // ABXY Labels
-                    const btnA = controls.querySelector('.gp_touch_button_a'); // Right
-                    const btnB = controls.querySelector('.gp_touch_button_b'); // Bottom
-                    const btnX = controls.querySelector('.gp_touch_button_x'); // Top
-                    const btnY = controls.querySelector('.gp_touch_button_y'); // Left
+                    const btnA = controls.querySelector('.gp_touch_button_a'); // Default Right
+                    const btnB = controls.querySelector('.gp_touch_button_b'); // Default Bottom
+                    const btnX = controls.querySelector('.gp_touch_button_x'); // Default Top
+                    const btnY = controls.querySelector('.gp_touch_button_y'); // Default Left
 
+                    // Customize labels to Xbox standard
                     if (btnA && btnA.innerHTML !== 'B') btnA.innerHTML = 'B';
                     if (btnB && btnB.innerHTML !== 'A') btnB.innerHTML = 'A';
                     if (btnX && btnX.innerHTML !== 'Y') btnX.innerHTML = 'Y';
                     if (btnY && btnY.innerHTML !== 'X') btnY.innerHTML = 'X';
 
-                    // Joystick/Dpad scale for easier touch
-                    const dpad = controls.querySelector('.gp_touch_dpad') || controls.querySelector('.gp_touch_joystick');
-                    if (dpad) {
-                        dpad.style.setProperty('transform', 'scale(1.2)', 'important');
-                        dpad.style.setProperty('left', '20px', 'important');
-                        dpad.style.setProperty('bottom', '20px', 'important');
+                    // Spacing Hack: Spread them out by adding margins if they are in a flex/block flow
+                    // Or adjust their native positioning if possible.
+                    // EJS uses absolute positioning for buttons inside the container.
+                    // We expand the container and let the buttons breathe.
+                    const container = controls.querySelector('.gp_touch_buttons_container');
+                    if (container) {
+                        // Increase horizontal gap by making it wider and shifting
+                        container.style.setProperty('width', '55vw', 'important');
                     }
                 }
+
+                // Nuclear check for mobile menu z-index
+                const menus = document.querySelectorAll('div[class*="ejs"], .ejs_menu');
+                menus.forEach(m => m.style.setProperty('z-index', '99999999', 'important'));
             };
 
-            setInterval(moveAndRemapControls, 200);
+            setInterval(moveAndRemapControls, 300);
         }
     </script>
 </body>
