@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-20T12:27:21.385Z</updated>
+  <updated>2026-01-20T17:32:24.391Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓 疯狂的鸽子 免广告版</title>
+    <link href="https://831014.xyz/posts/androidgame1/"/>
+    <id>https://831014.xyz/posts/androidgame1/</id>
+    <published>2026-01-20T17:33:00.000Z</published>
+    <updated>2026-01-20T17:32:24.391Z</updated>
+    
+    
+    <summary type="html">安卓 疯狂的鸽子（Pigeon Pop）免广告版下载，画风清新，玩法上瘾。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="安卓游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%AE%89%E5%8D%93%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="益智" scheme="https://831014.xyz/tags/%E7%9B%8A%E6%99%BA/"/>
+    
+    <category term="下载" scheme="https://831014.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+    <category term="安卓" scheme="https://831014.xyz/tags/%E5%AE%89%E5%8D%93/"/>
+    
+  </entry>
   
   <entry>
     <title>FC 松鼠大作战2在线玩</title>
@@ -39,9 +64,9 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
     <category term="松鼠大作战" scheme="https://831014.xyz/tags/%E6%9D%BE%E9%BC%A0%E5%A4%A7%E4%BD%9C%E6%88%98/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
   </entry>
   
@@ -68,9 +93,9 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
     <category term="松鼠大作战" scheme="https://831014.xyz/tags/%E6%9D%BE%E9%BC%A0%E5%A4%A7%E4%BD%9C%E6%88%98/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
   </entry>
   
@@ -527,38 +552,9 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
     <category term="快打旋风" scheme="https://831014.xyz/tags/%E5%BF%AB%E6%89%93%E6%97%8B%E9%A3%8E/"/>
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FC 气球大战在线玩</title>
-    <link href="https://831014.xyz/posts/fcgame2/"/>
-    <id>https://831014.xyz/posts/fcgame2/</id>
-    <published>2025-12-29T16:59:00.000Z</published>
-    <updated>2026-01-09T19:03:57.855Z</updated>
-    
-    
-    <summary type="html">FC 气球大战在线玩，支持 WSAD 操控、自动存档与即时存档。</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
-    
-    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
-    
-    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="气球大战" scheme="https://831014.xyz/tags/%E6%B0%94%E7%90%83%E5%A4%A7%E6%88%98/"/>
     
   </entry>
   
