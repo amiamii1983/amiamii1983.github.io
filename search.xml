@@ -298,13 +298,13 @@
             
             <tag> 在线玩 </tag>
             
-            <tag> GBC </tag>
-            
-            <tag> GameBoyColor </tag>
-            
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
+            
+            <tag> GBC </tag>
+            
+            <tag> GameBoyColor </tag>
             
             <tag> DX版 </tag>
             
@@ -339,11 +339,11 @@
             
             <tag> GBA </tag>
             
+            <tag> GameBoyAdvance </tag>
+            
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
-            
-            <tag> GameBoyAdvance </tag>
             
         </tags>
       
@@ -1029,7 +1029,7 @@
       <link href="/posts/fish_puzzle/"/>
       <url>/posts/fish_puzzle/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://rom.831014.xyz/img/Fish-Puzzle.jpg" alt="Fish Puzzle"></p><p>小鱼方块 (Fish Puzzle)<br>复刻街霸方块<br>游戏所有素材由AI制作+我修改整合<br>竖屏横屏都可玩<br>移动：A &#x2F; D (长按加速)<br>下落：S (长按加速)<br>旋转：J &#x2F; K功能：左上角[暂停]，右上角[存档&#x2F;读档]<br>完全免费，无广告核心玩法：<br>堆叠同色小鱼融合变大，消除鱼引爆连锁。<br>安卓苹果版有虚拟按键<br>双鱼对战为2台手机平板本地Wi-Fi联机<br>为了保证最佳体验，请留意：<br>1. 关于联机环境：部分旧型号手机的 WIFI 模块可能不支持点对点联机。<br>2. 对战重玩机制：由于联机对战中“重玩”功能依然存在不稳定性。<br>因此，我设定为一局分胜负。对战结束后，游戏将强制暂停15秒返回主菜单界面。如需再战，请重新连接。</p><p>下载地址<br><a href="https://github.com/amiamii1983/Fish-Puzzle">https://github.com/amiamii1983/Fish-Puzzle</a></p><p>安卓版如提示未知应用在手机设置允许安装如下载后缀名apk.1用自带浏览器安装</p><p>苹果版ipa文件（电脑Sideloadly签名用7天或越狱巨魔免签，信任和开发模式玩)</p><p>浏览器扩展版双鱼对战为玩家1和玩家2本地对战增加修改按键菜单</p><p>edge和chrome应用商店已发布</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://rom.831014.xyz/img/Fish-Puzzle.jpg" alt="Fish Puzzle"></p><p>小鱼方块 (Fish Puzzle)<br>复刻街霸方块<br>游戏所有素材由AI制作+我修改整合<br>竖屏横屏都可玩<br>移动：A &#x2F; D (长按加速)<br>下落：S (长按加速)<br>旋转：J &#x2F; K功能：左上角[暂停]，右上角[存档&#x2F;读档]<br>完全免费，无广告核心玩法：<br>堆叠同色小鱼融合变大，消除鱼引爆连锁。</p><p>安卓苹果版有虚拟按键<br>双鱼对战为2台手机平板本地Wi-Fi联机<br>为了保证最佳体验，请留意：<br>1. 关于联机环境：部分旧型号手机的 WIFI 模块可能不支持点对点联机。<br>2. 对战重玩机制：由于联机对战中“重玩”功能依然存在不稳定性。<br>因此，我设定为一局分胜负。对战结束后，游戏将强制暂停15秒返回主菜单界面。如需再战，请重新连接。</p><p>下载地址<br><a href="https://github.com/amiamii1983/Fish-Puzzle">https://github.com/amiamii1983/Fish-Puzzle</a></p><p>安卓版如提示未知应用在手机设置允许安装如下载后缀名apk.1用自带浏览器安装</p><p>苹果版ipa文件（电脑Sideloadly签名用7天或越狱巨魔免签，信任和开发模式玩)</p><p>浏览器扩展版<br>双鱼对战为玩家1和玩家2本地对战增加修改按键菜单</p><p>edge和chrome应用商店已发布</p>]]></content>
       
       
       <categories>
