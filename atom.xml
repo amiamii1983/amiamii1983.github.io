@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-21T17:33:05.304Z</updated>
+  <updated>2026-01-21T17:37:19.348Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://831014.xyz/posts/arcadegame6/"/>
     <id>https://831014.xyz/posts/arcadegame6/</id>
     <published>2026-01-21T16:55:00.000Z</published>
-    <updated>2026-01-21T17:33:05.304Z</updated>
+    <updated>2026-01-21T17:37:19.348Z</updated>
     
     
     <summary type="html">NeoGeo 对战射击游戏</summary>
@@ -73,7 +73,7 @@
     <link href="https://831014.xyz/posts/fcgame6/"/>
     <id>https://831014.xyz/posts/fcgame6/</id>
     <published>2026-01-20T12:28:00.000Z</published>
-    <updated>2026-01-21T17:33:05.292Z</updated>
+    <updated>2026-01-21T17:37:19.335Z</updated>
     
     
     <summary type="html">FC 动作闯关游戏续作</summary>
@@ -102,7 +102,7 @@
     <link href="https://831014.xyz/posts/fcgame5/"/>
     <id>https://831014.xyz/posts/fcgame5/</id>
     <published>2026-01-20T12:15:00.000Z</published>
-    <updated>2026-01-21T17:33:05.293Z</updated>
+    <updated>2026-01-21T17:37:19.336Z</updated>
     
     
     <summary type="html">FC 动作闯关游戏</summary>
@@ -131,7 +131,7 @@
     <link href="https://831014.xyz/posts/mdgame1/"/>
     <id>https://831014.xyz/posts/mdgame1/</id>
     <published>2026-01-17T01:30:00.000Z</published>
-    <updated>2026-01-21T17:33:05.301Z</updated>
+    <updated>2026-01-21T17:37:19.343Z</updated>
     
     
     <summary type="html">MD 动作闯关游戏</summary>
@@ -160,7 +160,7 @@
     <link href="https://831014.xyz/posts/goemon2_sfc/"/>
     <id>https://831014.xyz/posts/goemon2_sfc/</id>
     <published>2026-01-15T02:25:00.000Z</published>
-    <updated>2026-01-21T17:33:05.302Z</updated>
+    <updated>2026-01-21T17:37:19.345Z</updated>
     
     
     <summary type="html">SFC 动作冒险游戏</summary>
@@ -189,7 +189,7 @@
     <link href="https://831014.xyz/posts/gbagame4/"/>
     <id>https://831014.xyz/posts/gbagame4/</id>
     <published>2026-01-11T14:45:00.000Z</published>
-    <updated>2026-01-21T17:33:05.296Z</updated>
+    <updated>2026-01-21T17:37:19.340Z</updated>
     
     
     <summary type="html">经典 GBA 动作游戏。</summary>
@@ -218,7 +218,7 @@
     <link href="https://831014.xyz/posts/arcadegame5/"/>
     <id>https://831014.xyz/posts/arcadegame5/</id>
     <published>2026-01-11T14:16:00.000Z</published>
-    <updated>2026-01-21T17:33:05.305Z</updated>
+    <updated>2026-01-21T17:37:19.350Z</updated>
     
     
     <summary type="html">NeoGeo 动作射击游戏</summary>
@@ -245,7 +245,7 @@
     <link href="https://831014.xyz/posts/arcadegame4/"/>
     <id>https://831014.xyz/posts/arcadegame4/</id>
     <published>2026-01-11T14:15:00.000Z</published>
-    <updated>2026-01-21T17:33:05.306Z</updated>
+    <updated>2026-01-21T17:37:19.350Z</updated>
     
     
     <summary type="html">NeoGeo 动作射击游戏</summary>
@@ -272,7 +272,7 @@
     <link href="https://831014.xyz/posts/gbcmario2dx/"/>
     <id>https://831014.xyz/posts/gbcmario2dx/</id>
     <published>2026-01-10T05:40:00.000Z</published>
-    <updated>2026-01-21T17:33:05.299Z</updated>
+    <updated>2026-01-21T17:37:19.342Z</updated>
     
     
     <summary type="html">GBC 平台动作游戏</summary>
@@ -288,13 +288,13 @@
     
     <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
-    <category term="GBC" scheme="https://831014.xyz/tags/GBC/"/>
-    
-    <category term="GameBoyColor" scheme="https://831014.xyz/tags/GameBoyColor/"/>
-    
     <category term="马里奥" scheme="https://831014.xyz/tags/%E9%A9%AC%E9%87%8C%E5%A5%A5/"/>
     
     <category term="Super Mario" scheme="https://831014.xyz/tags/Super-Mario/"/>
+    
+    <category term="GBC" scheme="https://831014.xyz/tags/GBC/"/>
+    
+    <category term="GameBoyColor" scheme="https://831014.xyz/tags/GameBoyColor/"/>
     
     <category term="DX版" scheme="https://831014.xyz/tags/DX%E7%89%88/"/>
     
@@ -305,7 +305,7 @@
     <link href="https://831014.xyz/posts/gbagame3/"/>
     <id>https://831014.xyz/posts/gbagame3/</id>
     <published>2026-01-10T04:21:00.000Z</published>
-    <updated>2026-01-21T17:33:05.297Z</updated>
+    <updated>2026-01-21T17:37:19.340Z</updated>
     
     
     <summary type="html">GBA 平台动作游戏</summary>
@@ -323,11 +323,11 @@
     
     <category term="GBA" scheme="https://831014.xyz/tags/GBA/"/>
     
+    <category term="GameBoyAdvance" scheme="https://831014.xyz/tags/GameBoyAdvance/"/>
+    
     <category term="马里奥" scheme="https://831014.xyz/tags/%E9%A9%AC%E9%87%8C%E5%A5%A5/"/>
     
     <category term="Super Mario" scheme="https://831014.xyz/tags/Super-Mario/"/>
-    
-    <category term="GameBoyAdvance" scheme="https://831014.xyz/tags/GameBoyAdvance/"/>
     
   </entry>
   
@@ -336,7 +336,7 @@
     <link href="https://831014.xyz/posts/fctinytoon/"/>
     <id>https://831014.xyz/posts/fctinytoon/</id>
     <published>2026-01-10T03:59:00.000Z</published>
-    <updated>2026-01-21T17:33:05.285Z</updated>
+    <updated>2026-01-21T17:37:19.328Z</updated>
     
     
     <summary type="html">FC 动作闯关游戏</summary>
@@ -354,11 +354,11 @@
     
     <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
     
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
     <category term="兔宝宝" scheme="https://831014.xyz/tags/%E5%85%94%E5%AE%9D%E5%AE%9D/"/>
     
     <category term="Tiny Toon" scheme="https://831014.xyz/tags/Tiny-Toon/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
     
   </entry>
   
@@ -367,7 +367,7 @@
     <link href="https://831014.xyz/posts/fcgame4/"/>
     <id>https://831014.xyz/posts/fcgame4/</id>
     <published>2026-01-10T01:35:00.000Z</published>
-    <updated>2026-01-21T17:33:05.294Z</updated>
+    <updated>2026-01-21T17:37:19.338Z</updated>
     
     
     <summary type="html">FC 动作逃生游戏</summary>
@@ -421,7 +421,7 @@
     <link href="https://831014.xyz/posts/puyo2_sfc/"/>
     <id>https://831014.xyz/posts/puyo2_sfc/</id>
     <published>2026-01-09T17:05:00.000Z</published>
-    <updated>2026-01-21T17:33:05.303Z</updated>
+    <updated>2026-01-21T17:37:19.347Z</updated>
     
     
     <summary type="html">经典的街机益智游戏</summary>
