@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /scripts/
+Allow: /
+Sitemap: https://831014.xyz/sitemap.xml,https://831014.xyz/baidusitemap.xml
