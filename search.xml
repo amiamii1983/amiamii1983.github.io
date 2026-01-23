@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>街机 幽灵附身在线玩</title>
+      <link href="/posts/arcadegame7/"/>
+      <url>/posts/arcadegame7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>[data-type="post"] .recent-post-item .post_cover img {    object-position: top center !important;}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/arcade/avspirit/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/arcade/avspirit/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>攻击&#x2F;附身 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>跳跃 (A)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>投币 (Coin)</strong></td><td align="left"><strong>5</strong> 键</td></tr><tr><td align="left"><strong>开始 (Start)</strong></td><td align="left"><strong>1</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>附身技巧</strong>：变身为幽灵后可以附在敌人身上并获得其技能。</li><li><strong>多端支持</strong>：适配电脑与手机，多平台畅玩。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>独特机制</strong>：玩家扮演幽灵，可以附身于各种敌人来获得不同的战斗方式。</li><li><strong>街机原味</strong>：完美还原街机版《幽灵附身》，充满挑战趣味。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> 街机 </tag>
+            
+            <tag> 幽灵附身 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>街机 梦幻小妖精在线玩</title>
       <link href="/posts/arcadegame6/"/>
       <url>/posts/arcadegame6/</url>
@@ -331,13 +364,13 @@
             
             <tag> 在线玩 </tag>
             
-            <tag> GBC </tag>
-            
-            <tag> GameBoyColor </tag>
-            
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
+            
+            <tag> GBC </tag>
+            
+            <tag> GameBoyColor </tag>
             
             <tag> DX版 </tag>
             
