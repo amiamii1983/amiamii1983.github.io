@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>突击骑兵2 在线玩</title>
+    <title>Gunstar Super Heroes在线玩</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -148,8 +148,9 @@
             document.getElementById('start-overlay').style.display = 'none';
 
             try {
+                // Mapping arcade to fbneo and other cores
                 const coreMap = { 'arcade': 'fbneo', 'gb': 'gb', 'gba': 'gba', 'gbc': 'gbc', 'pce': 'pce', 'snes': 'snes' };
-                const coreKey = coreMap['arcade'] || 'fbneo';
+                const coreKey = coreMap['gba'] || 'gba';
                 const controls = { "0": { "4": "w", "5": "s", "6": "a", "7": "d", "0": "k", "1": "j", "2": "v", "3": "enter", "8": "5", "9": "1" } };
                 localStorage.setItem('EJS_settings_controls', JSON.stringify(controls));
                 localStorage.setItem('EJS_controls_' + coreKey, JSON.stringify(controls));
@@ -162,13 +163,12 @@
                 'adUrl': 'about:blank'
             };
 
-            window.EJS_core = 'fbneo';
+            window.EJS_core = 'gba';
             window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
-            window.EJS_biosUrl = 'https://rom.831014.xyz/arcade/neogeo.zip';
-            window.EJS_gameUrl = 'https://rom.831014.xyz/arcade/shocktr2/shocktr2.zip';
+            window.EJS_gameUrl = './Gunstar-Super-Heroes.zip';
             window.EJS_player = '#game-container';
-            window.EJS_gameName = "Shock Troopers - 2nd Squad";
-            window.EJS_color = '#ff4500';
+            window.EJS_gameName = "Gunstar Super Heroes";
+            window.EJS_color = '#ff4500'; // Specific color for each game
             window.EJS_defaultControls = { 0: { 4: 'w', 5: 's', 6: 'a', 7: 'd', 0: 'k', 1: 'j', 2: 'v', 3: 'enter', 8: '5', 9: '1' } };
 
             window.EJS_VirtualGamepad = false;

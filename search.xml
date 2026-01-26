@@ -4,6 +4,72 @@
   
     
     <entry>
+      <title>GBA 火枪英雄在线玩</title>
+      <link href="/posts/gbagame6/"/>
+      <url>/posts/gbagame6/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/gba/Gunstar-Super-Heroes/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/gba/Gunstar-Super-Heroes/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>射击 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>跳跃 (A)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>武器切换 (L)</strong></td><td align="left"><strong>U</strong> 键</td></tr><tr><td align="left"><strong>必杀技 (R)</strong></td><td align="left"><strong>I</strong> 键</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr><tr><td align="left"><strong>开始</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>射击模式</strong>：可以通过 R 键切换射击模式，应对不同的敌人和环境。</li><li><strong>近战攻击</strong>：靠近敌人时按射击键可以进行强力的近战攻击。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>神作续写</strong>：MD 名作《火枪英雄》在 GBA 上的完美续篇。</li><li><strong>火爆手感</strong>：Treasure 开发，手感极佳，战斗场面极其震撼。</li><li><strong>关卡丰富</strong>：融合了多种游戏类型的关卡设计，每一关都充满惊喜。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> GBA </tag>
+            
+            <tag> 火枪英雄 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>街机 飞盘大战在线玩</title>
+      <link href="/posts/arcadegame4/"/>
+      <url>/posts/arcadegame4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ffcc00 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/arcade/wjammers/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/arcade/wjammers/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ffcc00 0%, #ff6b3d 100%);    color: #000 !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>发射&#x2F;拦截 (A)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>滑行&#x2F;抛高 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>投币 (1P)</strong></td><td align="left"><strong>5</strong> 键</td></tr><tr><td align="left"><strong>开始 (1P)</strong></td><td align="left"><strong>1</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>投币说明</strong>：作为街机游戏，开始前请先按 <strong>5</strong> 键投币，然后按 <strong>1</strong> 键开始游戏。</li><li><strong>必杀技</strong>：在接到高球时，能量蓄满后按 <strong>A</strong> (K键) 可以放出华丽的弧线球或必杀球！</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>竞技巅峰</strong>：SNK 旗下的经典飞盘对战游戏，结合了网球与格斗的爽快感。</li><li><strong>动感十足</strong>：画面明亮，节奏极快，是街机厅里最受欢迎的对抗游戏之一。</li><li><strong>系统深度</strong>：包含各种假动作、弧线球和反击机制，极具耐玩性。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> 运动 </tag>
+            
+            <tag> 街机 </tag>
+            
+            <tag> 飞盘大战 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GBA 铁臂阿童木：欧米茄因子在线玩</title>
       <link href="/posts/gbagame5/"/>
       <url>/posts/gbagame5/</url>
