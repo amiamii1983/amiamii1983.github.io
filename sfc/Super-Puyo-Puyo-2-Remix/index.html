@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SFC 超级魔法气泡 2 混音版在线玩</title>
+    <title>Super Puyo Puyo 2 Remix在线玩</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,7 +30,7 @@
     </style>
     <style>
         :root {
-            --primary-color: #00d4aa;
+            --primary-color: #a0fe4f;
             --bg-color: #0a0a0c;
             --text-color: #e0e0e0;
         }
@@ -46,7 +46,7 @@
             justify-content: center;
             min-height: 100vh;
             overflow: hidden;
-            background: radial-gradient(circle at center, #0a2e2a 0%, #0a0a0c 100%);
+            background: radial-gradient(circle at center, #2e1a0a 0%, #0a0a0c 100%);
         }
 
         .container {
@@ -114,7 +114,7 @@
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0, 212, 170, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s;
         }
 
@@ -148,9 +148,12 @@
             document.getElementById('start-overlay').style.display = 'none';
 
             try {
+                // Mapping arcade to fbneo and other cores
+                const coreMap = { 'arcade': 'fbneo', 'gb': 'gb', 'gba': 'gba', 'gbc': 'gbc', 'pce': 'pce', 'snes': 'snes' };
+                const coreKey = coreMap['sfc'] || 'snes';
                 const controls = { "0": { "4": "w", "5": "s", "6": "a", "7": "d", "0": "k", "1": "j", "2": "v", "3": "enter", "8": "5", "9": "1" } };
                 localStorage.setItem('EJS_settings_controls', JSON.stringify(controls));
-                localStorage.setItem('EJS_controls_snes', JSON.stringify(controls));
+                localStorage.setItem('EJS_controls_' + coreKey, JSON.stringify(controls));
             } catch (e) { }
 
             window.EJS_settings = {
@@ -165,7 +168,7 @@
             window.EJS_gameUrl = './Super-Puyo-Puyo-2-Remix.zip';
             window.EJS_player = '#game-container';
             window.EJS_gameName = "Super Puyo Puyo 2 Remix";
-            window.EJS_color = '#00d4aa';
+            window.EJS_color = '#a0fe4f'; // Specific color for each game
             window.EJS_defaultControls = { 0: { 4: 'w', 5: 's', 6: 'a', 7: 'd', 0: 'k', 1: 'j', 2: 'v', 3: 'enter', 8: '5', 9: '1' } };
 
             window.EJS_VirtualGamepad = false;
