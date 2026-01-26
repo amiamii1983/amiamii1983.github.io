@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>GBA 蜡笔小新 电影乐园大冒险在线玩</title>
+    <title>Battle City在线玩</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,7 +30,7 @@
     </style>
     <style>
         :root {
-            --primary-color: #ffcc00;
+            --primary-color: #ff4500;
             --bg-color: #0a0a0c;
             --text-color: #e0e0e0;
         }
@@ -53,8 +53,7 @@
             position: relative;
             width: 100%;
             max-width: 800px;
-            aspect-ratio: 3/2;
-            /* GBA is 3:2 */
+            aspect-ratio: 4/3;
             background: #000;
             display: flex;
             align-items: center;
@@ -108,14 +107,14 @@
 
         .start-btn {
             background: var(--primary-color);
-            color: #000;
+            color: #fff;
             border: none;
             padding: 15px 40px;
             font-size: 1.2rem;
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
-            box-shadow: 0 10px 20px rgba(255, 204, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s;
         }
 
@@ -149,9 +148,12 @@
             document.getElementById('start-overlay').style.display = 'none';
 
             try {
-                const controls = { "0": { "0": "k", "1": "j", "2": "v", "3": "enter", "4": "w", "5": "s", "6": "a", "7": "d" } };
+                // Mapping arcade to fbneo and other cores
+                const coreMap = { 'arcade': 'fbneo', 'gb': 'gb', 'gba': 'gba', 'gbc': 'gbc', 'pce': 'pce', 'snes': 'snes' };
+                const coreKey = coreMap['fc'] || 'nes';
+                const controls = { "0": { "4": "w", "5": "s", "6": "a", "7": "d", "0": "k", "1": "j", "2": "v", "3": "enter", "8": "5", "9": "1" } };
                 localStorage.setItem('EJS_settings_controls', JSON.stringify(controls));
-                localStorage.setItem('EJS_controls_gba', JSON.stringify(controls));
+                localStorage.setItem('EJS_controls_' + coreKey, JSON.stringify(controls));
             } catch (e) { }
 
             window.EJS_settings = {
@@ -161,13 +163,13 @@
                 'adUrl': 'about:blank'
             };
 
-            window.EJS_core = 'gba';
+            window.EJS_core = 'nes';
             window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
-            window.EJS_gameUrl = 'https://rom.831014.xyz/gba/Crayon-Shin-chan-Daibouken!/Crayon-Shin-chan-Daibouken!.zip';
+            window.EJS_gameUrl = './Battle-City.zip';
             window.EJS_player = '#game-container';
-            window.EJS_gameName = "Crayon Shin-chan: Arashi no Kobu - Cinema Land no Daibouken!";
-            window.EJS_color = '#ffcc00';
-            window.EJS_defaultControls = { 0: { 4: 'w', 5: 's', 6: 'a', 7: 'd', 0: 'k', 1: 'j', 2: 'v', 3: 'enter' } };
+            window.EJS_gameName = "Battle City";
+            window.EJS_color = '#ff4500'; // Specific color for each game
+            window.EJS_defaultControls = { 0: { 4: 'w', 5: 's', 6: 'a', 7: 'd', 0: 'k', 1: 'j', 2: 'v', 3: 'enter', 8: '5', 9: '1' } };
 
             window.EJS_VirtualGamepad = false;
             window.EJS_TouchControls = false;

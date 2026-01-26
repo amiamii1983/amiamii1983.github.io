@@ -4,6 +4,76 @@
   
     
     <entry>
+      <title>GBA 铁臂阿童木：欧米茄因子在线玩</title>
+      <link href="/posts/gbagame5/"/>
+      <url>/posts/gbagame5/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/gba/Astro-Boy-Omega-Factor/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/gba/Astro-Boy-Omega-Factor/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>普通攻击 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>跳跃 (A)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>必杀技 (R)</strong></td><td align="left"><strong>I</strong> 键</td></tr><tr><td align="left"><strong>必杀技选择 (L)</strong></td><td align="left"><strong>U</strong> 键</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr><tr><td align="left"><strong>开始</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>欧米茄因子</strong>：通过在关卡中遇到不同的角色，可以解锁阿童木的欧米茄因子，增强各项属性和技能。</li><li><strong>连招系统</strong>：利用方向键配合攻击可以使出丰富的连击动作，积累能量槽释放华丽必杀。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>动作巅峰</strong>：由名厂 Treasure 开发，被誉为 GBA 平台上素质最高的动作游戏之一。</li><li><strong>华丽演出</strong>：同屏人数众多且丝滑顺畅，必杀特效震撼。</li><li><strong>神作回味</strong>：融合了阿童木原著的感人剧情与硬核的战斗系统。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> GBA </tag>
+            
+            <tag> 铁臂阿童木 </tag>
+            
+            <tag> 阿童木 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FC 牛奶与花生在线玩</title>
+      <link href="/posts/fcgame13/"/>
+      <url>/posts/fcgame13/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/fc/Nuts%26Milk/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/fc/Nuts%26Milk/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>跳跃 (A&#x2F;B)</strong></td><td align="left"><strong>K</strong> 或 <strong>J</strong> 键</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr><tr><td align="left"><strong>开始</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>目标接奶粉</strong>：操控 Milk 收集地图上的所有 Nuts，最后到达女朋友所在的蓝色房子。</li><li><strong>避开敌人</strong>：避开不断追逐你的紫颜色怪物。</li><li><strong>利用地形</strong>：利用梯子、管道和蹦床来穿梭或躲避敌人。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕失误重来。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>经典益智</strong>：Hudson Soft 为 FC 开发的第一款游戏，极具收藏意义。</li><li><strong>趣味十足</strong>：简单的规则背后蕴含着精妙的关卡设计。</li><li><strong>怀旧经典</strong>：完美还原红白机时代的童年乐趣。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FC </tag>
+            
+            <tag> 红白机 </tag>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> 益智 </tag>
+            
+            <tag> 牛奶与花生 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GBA 宝可梦弹珠台：红宝石&amp;蓝宝石在线玩</title>
       <link href="/posts/gbagame4/"/>
       <url>/posts/gbagame4/</url>
@@ -572,13 +642,13 @@
             
             <tag> 在线玩 </tag>
             
-            <tag> GBC </tag>
-            
-            <tag> GameBoyColor </tag>
-            
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
+            
+            <tag> GBC </tag>
+            
+            <tag> GameBoyColor </tag>
             
             <tag> DX版 </tag>
             
@@ -1230,9 +1300,9 @@
             
             <tag> 宝可梦 </tag>
             
-            <tag> GBC </tag>
-            
             <tag> 在线试玩 </tag>
+            
+            <tag> GBC </tag>
             
         </tags>
       
