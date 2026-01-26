@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>GBA 宝可梦弹珠台：红宝石&amp;蓝宝石在线玩</title>
+      <link href="/posts/gbagame4/"/>
+      <url>/posts/gbagame4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>[data-type="post"] .recent-post-item .post_cover img {    object-position: top center !important;}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/gba/pokmon-pinball-ruby-sapphire/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/gba/pokmon-pinball-ruby-sapphire/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ffcc00 0%, #ff6b3d 100%);    color: #000 !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键 (建议配置)</th></tr></thead><tbody><tr><td align="left"><strong>左挡板 (L)</strong></td><td align="left"><strong>A</strong> 键 或 <strong>U</strong> 键</td></tr><tr><td align="left"><strong>右挡板 (R)</strong></td><td align="left"><strong>D</strong> 键 或 <strong>I</strong> 键</td></tr><tr><td align="left"><strong>发射球 (A)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>摇晃 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>开始 (Start)</strong></td><td align="left"><strong>Enter</strong> 回车</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>捕获宝可梦</strong>：在弹珠比赛中达成特定条件可以开启捕获模式，收集各地区的宝可梦！</li><li><strong>进阶技巧</strong>：利用不同的台面机关可以触发小游戏和特殊奖励。</li><li><strong>多端支持</strong>：适配电脑与手机，多平台畅玩。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>经典创意</strong>：将宝可梦收集元素与弹珠台玩法完美融合。</li><li><strong>画面精美</strong>：GBA 后期高水准像素艺术，色彩鲜艳。</li><li><strong>收集挑战</strong>：包含红宝石和蓝宝石两个台面，各有不同的宝可梦可供收集。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 在线玩 </tag>
+            
+            <tag> GBA </tag>
+            
+            <tag> 宝可梦 </tag>
+            
+            <tag> 弹珠台 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>FC 敲冰块在线玩</title>
       <link href="/posts/fcgame12/"/>
       <url>/posts/fcgame12/</url>
@@ -26,9 +59,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 敲冰块 </tag>
             
@@ -61,9 +94,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 马戏团 </tag>
             
@@ -96,11 +129,11 @@
             
             <tag> 红白机 </tag>
             
+            <tag> 在线玩 </tag>
+            
             <tag> 射击 </tag>
             
             <tag> 坦克大战 </tag>
-            
-            <tag> 在线玩 </tag>
             
         </tags>
       
@@ -197,9 +230,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 街机 </tag>
             
@@ -298,9 +331,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -333,9 +366,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -364,9 +397,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> MD </tag>
             
@@ -399,9 +432,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> SFC </tag>
             
@@ -434,9 +467,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> GBA </tag>
             
@@ -535,17 +568,17 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
             
+            <tag> 在线玩 </tag>
+            
             <tag> GBC </tag>
+            
+            <tag> GameBoyColor </tag>
             
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
-            
-            <tag> GameBoyColor </tag>
             
             <tag> DX版 </tag>
             
@@ -574,9 +607,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> GBA </tag>
             
@@ -615,13 +648,13 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
             
             <tag> 兔宝宝 </tag>
             
             <tag> Tiny Toon </tag>
+            
+            <tag> 在线玩 </tag>
             
         </tags>
       
@@ -652,9 +685,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 猫捉老鼠 </tag>
             
@@ -894,9 +927,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 快打旋风 </tag>
             
@@ -929,9 +962,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 动作 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 气球大战 </tag>
             
@@ -960,9 +993,9 @@
       
         <tags>
             
-            <tag> 射击 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 射击 </tag>
             
             <tag> SFC </tag>
             
@@ -1195,11 +1228,11 @@
       
         <tags>
             
-            <tag> 在线试玩 </tag>
+            <tag> 宝可梦 </tag>
             
             <tag> GBC </tag>
             
-            <tag> 宝可梦 </tag>
+            <tag> 在线试玩 </tag>
             
         </tags>
       
