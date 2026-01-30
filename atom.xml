@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-26T14:10:00.857Z</updated>
+  <updated>2026-01-30T13:16:13.871Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SFC 蚯蚓战士2在线玩</title>
+    <link href="https://831014.xyz/posts/earthworm_jim2_sfc/"/>
+    <id>https://831014.xyz/posts/earthworm_jim2_sfc/</id>
+    <published>2026-01-30T13:14:00.000Z</published>
+    <updated>2026-01-30T13:16:13.871Z</updated>
+    
+    
+    <summary type="html">SFC 极度魔性的动作射击游戏</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="SFC" scheme="https://831014.xyz/tags/SFC/"/>
+    
+    <category term="超任" scheme="https://831014.xyz/tags/%E8%B6%85%E4%BB%BB/"/>
+    
+    <category term="蚯蚓战士" scheme="https://831014.xyz/tags/%E8%9A%AF%E8%9A%93%E6%88%98%E5%A3%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>GBA 火枪英雄在线玩</title>
@@ -548,33 +577,6 @@
     <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
     
     <category term="突击骑兵2" scheme="https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B52/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>街机 突击骑兵在线玩</title>
-    <link href="https://831014.xyz/posts/arcadegame4/"/>
-    <id>https://831014.xyz/posts/arcadegame4/</id>
-    <published>2026-01-11T14:15:00.000Z</published>
-    <updated>2026-01-26T07:43:37.321Z</updated>
-    
-    
-    <summary type="html">NeoGeo 动作射击游戏</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
-    
-    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
-    
-    <category term="突击骑兵" scheme="https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B5/"/>
     
   </entry>
   
