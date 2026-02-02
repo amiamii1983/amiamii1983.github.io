@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-01-30T13:16:13.871Z</updated>
+  <updated>2026-02-02T18:05:12.107Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MD 阿拉丁 (Disney&#39;s Aladdin) 在线玩</title>
+    <link href="https://831014.xyz/posts/aladdin_md/"/>
+    <id>https://831014.xyz/posts/aladdin_md/</id>
+    <published>2026-02-02T18:00:00.000Z</published>
+    <updated>2026-02-02T18:05:12.107Z</updated>
+    
+    
+    <summary type="html">经典 MD 动作平台游戏，由 Virgin Games 制作，被公认为最出色的电影改编游戏之一。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="MD" scheme="https://831014.xyz/tags/MD/"/>
+    
+    <category term="世嘉" scheme="https://831014.xyz/tags/%E4%B8%96%E5%98%89/"/>
+    
+    <category term="阿拉丁" scheme="https://831014.xyz/tags/%E9%98%BF%E6%8B%89%E4%B8%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SFC 阿拉丁（Disney&#39;s Aladdin）在线玩</title>
+    <link href="https://831014.xyz/posts/aladdin_sfc/"/>
+    <id>https://831014.xyz/posts/aladdin_sfc/</id>
+    <published>2026-02-02T18:00:00.000Z</published>
+    <updated>2026-02-02T18:02:57.484Z</updated>
+    
+    
+    <summary type="html">经典 SFC 动作平台游戏，由 Capcom 制作。</summary>
+    
+    
+    
+    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    
+    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
+    
+    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
+    
+    <category term="阿拉丁" scheme="https://831014.xyz/tags/%E9%98%BF%E6%8B%89%E4%B8%81/"/>
+    
+    <category term="SFC" scheme="https://831014.xyz/tags/SFC/"/>
+    
+    <category term="超任" scheme="https://831014.xyz/tags/%E8%B6%85%E4%BB%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>SFC 蚯蚓战士2在线玩</title>
@@ -521,62 +579,6 @@
     <category term="超任" scheme="https://831014.xyz/tags/%E8%B6%85%E4%BB%BB/"/>
     
     <category term="大盗伍佑卫门" scheme="https://831014.xyz/tags/%E5%A4%A7%E7%9B%97%E4%BC%8D%E4%BD%91%E5%8D%AB%E9%97%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GBA 蜡笔小新 呼风唤雨的电影乐园大冒险在线玩</title>
-    <link href="https://831014.xyz/posts/gbagame4/"/>
-    <id>https://831014.xyz/posts/gbagame4/</id>
-    <published>2026-01-11T14:45:00.000Z</published>
-    <updated>2026-01-26T07:43:37.312Z</updated>
-    
-    
-    <summary type="html">GBA 横版动作游戏</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="GBA" scheme="https://831014.xyz/tags/GBA/"/>
-    
-    <category term="GameBoyAdvance" scheme="https://831014.xyz/tags/GameBoyAdvance/"/>
-    
-    <category term="蜡笔小新" scheme="https://831014.xyz/tags/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>街机 突击骑兵2在线玩</title>
-    <link href="https://831014.xyz/posts/arcadegame5/"/>
-    <id>https://831014.xyz/posts/arcadegame5/</id>
-    <published>2026-01-11T14:16:00.000Z</published>
-    <updated>2026-01-26T07:43:37.320Z</updated>
-    
-    
-    <summary type="html">NeoGeo 动作射击游戏</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="街机" scheme="https://831014.xyz/tags/%E8%A1%97%E6%9C%BA/"/>
-    
-    <category term="NeoGeo" scheme="https://831014.xyz/tags/NeoGeo/"/>
-    
-    <category term="突击骑兵2" scheme="https://831014.xyz/tags/%E7%AA%81%E5%87%BB%E9%AA%91%E5%85%B52/"/>
     
   </entry>
   
