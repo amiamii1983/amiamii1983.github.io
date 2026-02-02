@@ -8,7 +8,7 @@
       <link href="/posts/aladdin_md/"/>
       <url>/posts/aladdin_md/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="/md/aladdin/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="/md/aladdin/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>丢苹果 (A)</strong></td><td align="left"><strong>L</strong> 键</td></tr><tr><td align="left"><strong>挥刀 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>跳跃 (C)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr><tr><td align="left"><strong>开始 (Start)</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>流畅体验</strong>：针对网页环境进行了专项优化。</li><li><strong>多端支持</strong>：适配电脑与手机，多平台畅玩。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>动画大师作品</strong>：采用了迪士尼动画师参与制作的“Digicel”技术，画面如动画般生动。</li><li><strong>动作巅峰</strong>：Virgin Games 的代表作，无论是动作连贯性还是画面细节都远超同时期同类作品。</li><li><strong>神作回味</strong>：比 SFC 版拥有更出色的打击感和更接近原作的韵味。</li></ul><p>祝你玩得愉快！</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="/md/Aladdin/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="/md/Aladdin/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制</strong></td><td align="left"><strong>W S A D</strong></td></tr><tr><td align="left"><strong>丢苹果 (A)</strong></td><td align="left"><strong>L</strong> 键</td></tr><tr><td align="left"><strong>挥刀 (B)</strong></td><td align="left"><strong>J</strong> 键</td></tr><tr><td align="left"><strong>跳跃 (C)</strong></td><td align="left"><strong>K</strong> 键</td></tr><tr><td align="left"><strong>选择 (Select)</strong></td><td align="left"><strong>V</strong> 键</td></tr><tr><td align="left"><strong>开始 (Start)</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面并确认浏览器是否使用了 Global Speed 等插件导致按键冲突。</li><li><strong>即时存读</strong>：随时随地保存进度，不怕刷新页面。</li><li><strong>流畅体验</strong>：针对网页环境进行了专项优化。</li><li><strong>多端支持</strong>：适配电脑与手机，多平台畅玩。</li><li><strong>操作优化</strong>：建议将游戏默认按键修改为上方表格的操作说明按键，体验更佳。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>动画大师作品</strong>：采用了迪士尼动画师参与制作的“Digicel”技术，画面如动画般生动。</li><li><strong>动作巅峰</strong>：Virgin Games 的代表作，无论是动作连贯性还是画面细节都远超同时期同类作品。</li><li><strong>神作回味</strong>：比 SFC 版拥有更出色的打击感和更接近原作的韵味。</li></ul><p>祝你玩得愉快！</p>]]></content>
       
       
       <categories>
@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -57,9 +57,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 阿拉丁 </tag>
             
@@ -92,9 +92,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> SFC </tag>
             
@@ -127,9 +127,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -193,9 +193,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -300,9 +300,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 敲冰块 </tag>
             
@@ -335,9 +335,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 马戏团 </tag>
             
@@ -370,11 +370,11 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 射击 </tag>
             
             <tag> 坦克大战 </tag>
+            
+            <tag> 在线玩 </tag>
             
         </tags>
       
@@ -471,9 +471,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 街机 </tag>
             
@@ -572,9 +572,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -607,9 +607,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -638,9 +638,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -673,9 +673,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> SFC </tag>
             
@@ -708,9 +708,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -809,17 +809,17 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
             
-            <tag> GBC </tag>
-            
-            <tag> GameBoyColor </tag>
+            <tag> 动作 </tag>
             
             <tag> 马里奥 </tag>
             
             <tag> Super Mario </tag>
+            
+            <tag> GBC </tag>
+            
+            <tag> GameBoyColor </tag>
             
             <tag> DX版 </tag>
             
@@ -848,9 +848,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -889,13 +889,13 @@
             
             <tag> 红白机 </tag>
             
+            <tag> 在线玩 </tag>
+            
             <tag> 动作 </tag>
             
             <tag> 兔宝宝 </tag>
             
             <tag> Tiny Toon </tag>
-            
-            <tag> 在线玩 </tag>
             
         </tags>
       
@@ -926,9 +926,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 猫捉老鼠 </tag>
             
@@ -1168,9 +1168,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 快打旋风 </tag>
             
@@ -1203,9 +1203,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 气球大战 </tag>
             
@@ -1234,9 +1234,9 @@
       
         <tags>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 射击 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> SFC </tag>
             
