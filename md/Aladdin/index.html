@@ -150,7 +150,7 @@
             try {
                 // Mapping arcade to fbneo and other cores
                 const coreMap = { 'fc': 'nes', 'gba': 'gba', 'sfc': 'snes', 'md': 'genesis' };
-                const coreKey = coreMap['md'] || 'segaMD';
+                const coreKey = coreMap['md'] || 'genesis';
                 const controls = { "0": { "4": "w", "5": "s", "6": "a", "7": "d", "0": "k", "1": "j", "2": "l", "3": "enter", "8": "5", "9": "1" } };
                 localStorage.setItem('EJS_settings_controls', JSON.stringify(controls));
                 localStorage.setItem('EJS_controls_' + coreKey, JSON.stringify(controls));
@@ -163,7 +163,7 @@
                 'adUrl': 'about:blank'
             };
 
-            window.EJS_core = 'segaMD';
+            window.EJS_core = 'genesis';
             window.EJS_pathtodata = 'https://www.emulatorjs.com/data/';
             window.EJS_gameUrl = './Aladdin.zip';
             window.EJS_player = '#game-container';
