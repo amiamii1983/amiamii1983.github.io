@@ -1,6 +1,3 @@
-https://831014.xyz/posts/sonic3_md/
-https://831014.xyz/posts/sonic2_md/
-https://831014.xyz/posts/sonic_md/
 https://831014.xyz/posts/aladdin_md/
 https://831014.xyz/posts/aladdin_sfc/
 https://831014.xyz/posts/earthworm_jim2_sfc/
@@ -14,6 +11,9 @@ https://831014.xyz/posts/fcgame11/
 https://831014.xyz/posts/fcgame10/
 https://831014.xyz/posts/fcgame9/
 https://831014.xyz/posts/fcgame8/
+https://831014.xyz/posts/sonic3_md/
+https://831014.xyz/posts/sonic2_md/
+https://831014.xyz/posts/sonic_md/
 https://831014.xyz/posts/arcadegame7/
 https://831014.xyz/posts/arcadegame6/
 https://831014.xyz/posts/androidgame1/
