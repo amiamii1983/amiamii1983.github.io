@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>MD 刺猬索尼克3在线玩</title>
+      <title>MD 索尼克3在线玩</title>
       <link href="/posts/sonic3_md/"/>
       <url>/posts/sonic3_md/</url>
       
@@ -39,7 +39,7 @@
     
     
     <entry>
-      <title>MD 刺猬索尼克2在线玩</title>
+      <title>MD 索尼克2在线玩</title>
       <link href="/posts/sonic2_md/"/>
       <url>/posts/sonic2_md/</url>
       
@@ -74,7 +74,7 @@
     
     
     <entry>
-      <title>MD 刺猬索尼克在线玩</title>
+      <title>MD 索尼克在线玩</title>
       <link href="/posts/sonic_md/"/>
       <url>/posts/sonic_md/</url>
       
@@ -166,11 +166,11 @@
             
             <tag> 在线玩 </tag>
             
-            <tag> 阿拉丁 </tag>
-            
             <tag> SFC </tag>
             
             <tag> 超任 </tag>
+            
+            <tag> 阿拉丁 </tag>
             
         </tags>
       
