@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://831014.xyz/posts/aladdin_md/</loc>
+    <lastmod>2026-02-13</lastmod>
+  </url>
+  <url>
     <loc>https://831014.xyz/posts/sonic3_md/</loc>
     <lastmod>2026-02-03</lastmod>
   </url>
@@ -11,10 +15,6 @@
   <url>
     <loc>https://831014.xyz/posts/sonic_md/</loc>
     <lastmod>2026-02-03</lastmod>
-  </url>
-  <url>
-    <loc>https://831014.xyz/posts/aladdin_md/</loc>
-    <lastmod>2026-02-02</lastmod>
   </url>
   <url>
     <loc>https://831014.xyz/posts/aladdin_sfc/</loc>
