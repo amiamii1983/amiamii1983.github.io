@@ -1,1 +1,1 @@
-document.addEventListener("play",function(e){"VIDEO"!==e.target.tagName&&"AUDIO"!==e.target.tagName||(document.querySelectorAll("meting-js").forEach(e=>{e.ap&&e.ap.pause()}),"undefined"!=typeof ap&&ap.pause&&ap.pause())},!0);
+document.addEventListener("play",function(e){if(e.target.tagName==="VIDEO"||e.target.tagName==="AUDIO"){const a=document.querySelectorAll("meting-js");a.forEach(e=>{if(e.ap){e.ap.pause()}});if(typeof ap!=="undefined"&&ap.pause){ap.pause()}}},true);
