@@ -6,7 +6,7 @@
   <link href="https://831014.xyz/atom.xml" rel="self"/>
   
   <link href="https://831014.xyz/"/>
-  <updated>2026-02-03T16:58:51.140Z</updated>
+  <updated>2026-02-27T01:11:31.812Z</updated>
   <id>https://831014.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>宝可梦30周年logo图</title>
+    <link href="https://831014.xyz/posts/f7aa5d42/"/>
+    <id>https://831014.xyz/posts/f7aa5d42/</id>
+    <published>2026-02-27T01:12:00.000Z</published>
+    <updated>2026-02-27T01:11:31.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="动漫" scheme="https://831014.xyz/categories/%E5%8A%A8%E6%BC%AB/"/>
+    
+    
+    <category term="宝可梦" scheme="https://831014.xyz/tags/%E5%AE%9D%E5%8F%AF%E6%A2%A6/"/>
+    
+    <category term="Pokemon" scheme="https://831014.xyz/tags/Pokemon/"/>
+    
+  </entry>
   
   <entry>
     <title>MD 索尼克3在线玩</title>
@@ -550,35 +577,6 @@
     <category term="下载" scheme="https://831014.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
     <category term="安卓" scheme="https://831014.xyz/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FC 松鼠大作战2在线玩</title>
-    <link href="https://831014.xyz/posts/fcgame6/"/>
-    <id>https://831014.xyz/posts/fcgame6/</id>
-    <published>2026-01-20T12:28:00.000Z</published>
-    <updated>2026-01-26T07:43:37.307Z</updated>
-    
-    
-    <summary type="html">FC 动作闯关游戏续作</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="小游戏在线玩" scheme="https://831014.xyz/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    
-    <category term="FC" scheme="https://831014.xyz/tags/FC/"/>
-    
-    <category term="红白机" scheme="https://831014.xyz/tags/%E7%BA%A2%E7%99%BD%E6%9C%BA/"/>
-    
-    <category term="动作" scheme="https://831014.xyz/tags/%E5%8A%A8%E4%BD%9C/"/>
-    
-    <category term="在线玩" scheme="https://831014.xyz/tags/%E5%9C%A8%E7%BA%BF%E7%8E%A9/"/>
-    
-    <category term="松鼠大作战" scheme="https://831014.xyz/tags/%E6%9D%BE%E9%BC%A0%E5%A4%A7%E4%BD%9C%E6%88%98/"/>
     
   </entry>
   
