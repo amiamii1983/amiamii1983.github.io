@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>软件 | 文之物语</title><meta name="author" content="amiamii"><meta name="copyright" content="amiamii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="常用装机必备工具箱，包含文件传输、视频处理、下载器、硬盘检测等各类高效神器合集。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件">
+<meta property="og:url" content="https://831014.xyz/posts/software/index.html">
+<meta property="og:site_name" content="文之物语">
+<meta property="og:description" content="常用装机必备工具箱，包含文件传输、视频处理、下载器、硬盘检测等各类高效神器合集。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://rom.831014.xyz/img/butterfly-icon.png?v=20260103">
+<meta property="article:published_time" content="2026-01-08T17:32:00.347Z">
+<meta property="article:modified_time" content="2026-01-21T17:11:32.840Z">
+<meta property="article:author" content="amiamii">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="软件">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rom.831014.xyz/img/butterfly-icon.png?v=20260103"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "软件",
+  "url": "https://831014.xyz/posts/software/",
+  "image": "https://rom.831014.xyz/img/butterfly-icon.png?v=20260103",
+  "datePublished": "2026-01-08T17:32:00.347Z",
+  "dateModified": "2026-01-21T17:11:32.840Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "amiamii",
+      "url": "https://831014.xyz"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://rom.831014.xyz/img/favicon.png"><link rel="canonical" href="https://831014.xyz/posts/software/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '软件',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><style>#site-title { display: none !important; }
+  /* 强制全站文章顶部图在任何尺寸下都锁定视觉中心 */
+  #page-header.post-user {
+    background-attachment: scroll !important;
+    background-position: 50% 35% !important; /* 稍微靠上，确保人脸在宽屏下不被截断 */
+    background-size: cover !important;
+  }
+  /* 针对超宽屏幕（如最大化窗口）进行微调 */
+  @media screen and (min-width: 2000px) {
+    #page-header.post-user {
+      background-position: 50% 25% !important;
+    }
+  }
+
+  /* 隐藏 APlayer 默认的 1-based 索引，以使用歌单名自带的 01-0 */
+<script>
+(function() {
+  var aplayerCheck = setInterval(function() {
+    if (typeof APlayer !== 'undefined' && document.getElementById('aplayer-fixed')) {
+      clearInterval(aplayerCheck);
+      fetch('/aplayer_music.json')
+        .then(res => res.json())
+        .then(data => {
+          new APlayer({
+            container: document.getElementById('aplayer-fixed'),
+            fixed: true,
+            autoplay: false,
+            theme: '#49b1f5',
+            loop: 'all',
+            order: 'list',
+            preload: 'none',
+            volume: 0.7,
+            mutex: true,
+            listFolded: false,
+            lrcType: 0,
+            audio: data
+          });
+        })
+        .catch(err => console.error('APlayer list load failed:', err));
+    }
+  }, 300);
+})();
+</script>
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="文之物语" type="application/atom+xml">
+</head><body><div id="web_bg" style="background-image: url(https://rom.831014.xyz/img/bg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://rom.831014.xyz/img/butterfly-icon.png" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">85</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%8A%A8%E6%BC%AB/"><i class="fa-fw fas fa-tv"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%B8%B8%E6%88%8F/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%BD%AF%E4%BB%B6/"><i class="fa-fw fas fa-laptop"></i><span> 软件</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://rom.831014.xyz/dragonball/dragonball2.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%8A%A8%E6%BC%AB/"><i class="fa-fw fas fa-tv"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%B8%B8%E6%88%8F/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%BD%AF%E4%BB%B6/"><i class="fa-fw fas fa-laptop"></i><span> 软件</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">软件</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-08T17:32:00.347Z" title="发表于 2026-01-09 01:32:00">2026-01-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-21T17:11:32.840Z" title="更新于 2026-01-22 01:11:32">2026-01-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>Total Commander 文件管理器  <a target="_blank" rel="noopener" href="https://www.ghisler.com/">https://www.ghisler.com/</a></p>
+<p>landrop  跨平台局域网文件传输工具  <a target="_blank" rel="noopener" href="https://landrop.app/">https://landrop.app/</a>   </p>
+<p>LosslessCut 视频无损切割  <a target="_blank" rel="noopener" href="https://github.com/mifi/lossless-cut/releases">https://github.com/mifi/lossless-cut/releases</a></p>
+<p>爱思助手  苹果验机，刷机，越狱，文件传输   <a target="_blank" rel="noopener" href="https://www.i4.cn/pro_pc.html">https://www.i4.cn/pro_pc.html</a></p>
+<p>qbittorrent  PT用下载软件（按PT站要求下载对应旧版本，取消更新）  <a target="_blank" rel="noopener" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases">https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases</a></p>
+<p>Everything  基于名称快速搜索文件和文件夹    <a target="_blank" rel="noopener" href="https://www.voidtools.com/zh-cn/">https://www.voidtools.com/zh-cn/</a></p>
+<p>哔哩下载姬(跨平台版)  <a target="_blank" rel="noopener" href="https://github.com/yaobiao131/downkyicore/releases">https://github.com/yaobiao131/downkyicore/releases</a></p>
+<p>foobar2000 本地音频播放器  <a target="_blank" rel="noopener" href="https://www.cnblogs.com/asionwu">https://www.cnblogs.com/asionwu</a></p>
+<p>lx-music   开源音乐播放器，自定义音源  <a target="_blank" rel="noopener" href="https://github.com/lyswhut/lx-music-desktop/releases">https://github.com/lyswhut/lx-music-desktop/releases</a></p>
+<p>CrystalDiskInfo  硬盘检测 <a target="_blank" rel="noopener" href="https://crystalmark.info/en/download/">https://crystalmark.info/en/download/</a></p>
+<p>Wise Force Deleter  强制删除文件 <a target="_blank" rel="noopener" href="https://www.wisecleaner.com/wise-force-deleter.html">https://www.wisecleaner.com/wise-force-deleter.html</a></p>
+<p>anydesk 远程桌面 <a target="_blank" rel="noopener" href="https://www.anydeskchina.cn/xiazai.html">https://www.anydeskchina.cn/xiazai.html</a><br>windows app  MAC远程桌面 除国行apple id外在apple store下载</p>
+<p>mac下载 ndm  <a target="_blank" rel="noopener" href="https://neatdownloadmanager.com/index.php/en/">https://neatdownloadmanager.com/index.php/en/</a></p>
+<p>代理<br>media-downloader  yt-dlp  <a target="_blank" rel="noopener" href="https://github.com/mhogomchungu/media-downloader/releases">https://github.com/mhogomchungu/media-downloader/releases</a><br>在线网yt下载  <a target="_blank" rel="noopener" href="https://ssyoutube.online/en2/">https://ssyoutube.online/en2/</a></p>
+<p>PotPlayer  本地视频播放器  <a target="_blank" rel="noopener" href="https://potplayer.daum.net/">https://potplayer.daum.net/</a></p>
+<p>谷歌chrome浏览器扩展程序  应用商店搜索下载 <a target="_blank" rel="noopener" href="https://chromewebstore.google.com/">https://chromewebstore.google.com/</a><br>AdGuard       广告拦截器<br>Global Speed  视频速度控制<br>PT Depiler     PT站统计<br>Speed Dial FVD  书签归类<br>Web to PDF     网页转PDF<br>沉浸式翻译      网页翻译<br>GoFullPage   网页下载<br>Proxy SwitchyOmega 3  管理直连代理<br>Shazam       在浏览器中直接识别歌曲<br>Imageye      批量图片下载<br>购物党自动比价工具  淘宝京东历史价最低价<br>篡改猴       使用用户脚本自由地改变网络<br>获取新脚本 <a target="_blank" rel="noopener" href="https://greasyfork.org/">https://greasyfork.org/</a><br>网盘自动填写访问码【威力加强版】<br>🔥🔥🔥文本选中复制🔥🔥🔥<br>【玩的嗨】VIP工具箱</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://831014.xyz">amiamii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://831014.xyz/posts/software/">https://831014.xyz/posts/software/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://831014.xyz" target="_blank">文之物语</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/software/">软件</a><a class="post-meta__tags" href="/tags/tools/">工具</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/puyo2_sfc/" title="SFC 超级魔法气泡 2 混音版在线玩"><img class="cover" src="https://rom.831014.xyz/sfc/Super-Puyo-Puyo-2-Remix/box-art.jpg" onerror="onerror=null;src='https://rom.831014.xyz/img/404.jpg'" alt="cover of previous post" loading='lazy'><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">SFC 超级魔法气泡 2 混音版在线玩</div></div><div class="info-2"><div class="info-item-1">SFC 益智对战游戏</div></div></div></a><a class="pagination-related" href="/posts/bookmark/" title="书签"><img class="cover" src="https://rom.831014.xyz/img/butterfly-icon.png?v=20260103" onerror="onerror=null;src='https://rom.831014.xyz/img/404.jpg'" alt="cover of next post" loading='lazy'><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">书签</div></div><div class="info-2"><div class="info-item-1">私藏的优质网站书签合集，涵盖动漫、游戏、实用软件工具及各大资源站点推荐。</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://rom.831014.xyz/img/butterfly-icon.png" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">amiamii</div><div class="author-info-description">博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">85</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">分享动漫，游戏，软件，欢迎收藏分享</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/fcantarctic/" title="FC 南极大冒险在线玩"><img src="https://rom.831014.xyz/fc/Antarctic-Adventure/box-art.jpg" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/404.jpg'" alt="FC 南极大冒险在线玩"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/fcantarctic/" title="FC 南极大冒险在线玩">FC 南极大冒险在线玩</a><time datetime="2026-03-19T16:22:00.000Z" title="发表于 2026-03-20 00:22:00">2026-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/fcexcitebike/" title="FC 越野机车在线玩"><img src="https://rom.831014.xyz/fc/Excitebike/box-art.jpg" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/404.jpg'" alt="FC 越野机车在线玩"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/fcexcitebike/" title="FC 越野机车在线玩">FC 越野机车在线玩</a><time datetime="2026-03-08T14:25:00.000Z" title="发表于 2026-03-08 22:25:00">2026-03-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f7aa5d42/" title="宝可梦30周年logo图"><img src="https://rom.831014.xyz/pokemon/pokemon_30th_logos/pekemon.png" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/404.jpg'" alt="宝可梦30周年logo图"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/f7aa5d42/" title="宝可梦30周年logo图">宝可梦30周年logo图</a><time datetime="2026-02-27T01:12:00.000Z" title="发表于 2026-02-27 09:12:00">2026-02-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/sonic3_md/" title="MD 索尼克3在线玩"><img src="https://rom.831014.xyz/md/Sonic-The-Hedgehog3/box-art.jpg" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/404.jpg'" alt="MD 索尼克3在线玩"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/sonic3_md/" title="MD 索尼克3在线玩">MD 索尼克3在线玩</a><time datetime="2026-02-03T15:03:00.000Z" title="发表于 2026-02-03 23:03:00">2026-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/sonic2_md/" title="MD 索尼克2在线玩"><img src="https://rom.831014.xyz/md/Sonic-The-Hedgehog2/box-art.jpg" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/404.jpg'" alt="MD 索尼克2在线玩"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/sonic2_md/" title="MD 索尼克2在线玩">MD 索尼克2在线玩</a><time datetime="2026-02-03T15:02:00.000Z" title="发表于 2026-02-03 23:02:00">2026-02-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://rom.831014.xyz/img/footer-bg.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By amiamii</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="https://events.vercount.one/js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.2"></script></div></div></body></html>
