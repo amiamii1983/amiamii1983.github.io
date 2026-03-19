@@ -176,37 +176,12 @@
     }
   }
 
-  /* 隐藏 APlayer 默认的 1-based 索引，以使用歌单名自带的 01-0 */
+  /* 隐藏 APlayer 默认的 1-based 索引，以使用歌单名自带的 01-09 补零编号 */
+  .aplayer-list ol li .aplayer-list-index {
+    display: none !important;
+  }
 </style>
-<script>
-(function() {
-  var aplayerCheck = setInterval(function() {
-    if (typeof APlayer !== 'undefined' && document.getElementById('aplayer-fixed')) {
-      clearInterval(aplayerCheck);
-      fetch('/aplayer_music.json')
-        .then(res => res.json())
-        .then(data => {
-          new APlayer({
-            container: document.getElementById('aplayer-fixed'),
-            fixed: true,
-            autoplay: false,
-            theme: '#49b1f5',
-            loop: 'all',
-            order: 'list',
-            preload: 'none',
-            volume: 0.7,
-            mutex: true,
-            listFolded: false,
-            lrcType: 0,
-            audio: data
-          });
-        })
-        .catch(err => console.error('APlayer list load failed:', err));
-    }
-  }, 300);
-})();
-</script>
-<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="文之物语" type="application/atom+xml">
+<meta name="baidu-site-verification" content="codeva-EwosnkLWC4" /><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="文之物语" type="application/atom+xml">
 </head><body><div id="web_bg" style="background-image: url(https://rom.831014.xyz/img/bg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://rom.831014.xyz/img/butterfly-icon.png" onerror="this.onerror=null;this.src='https://rom.831014.xyz/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">85</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%8A%A8%E6%BC%AB/"><i class="fa-fw fas fa-tv"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%B8%B8%E6%88%8F/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%BD%AF%E4%BB%B6/"><i class="fa-fw fas fa-laptop"></i><span> 软件</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://rom.831014.xyz/dragonball/dragonball2.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%8A%A8%E6%BC%AB/"><i class="fa-fw fas fa-tv"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%B8%B8%E6%88%8F/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%BD%AF%E4%BB%B6/"><i class="fa-fw fas fa-laptop"></i><span> 软件</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">GBA 宝可梦弹珠台：红宝石&amp;蓝宝石在线玩</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-26T11:37:00.000Z" title="发表于 2026-01-26 19:37:00">2026-01-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-26T11:38:03.396Z" title="更新于 2026-01-26 19:38:03">2026-01-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E7%8E%A9/">小游戏在线玩</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><span id="more"></span>
 
 <style>
@@ -350,7 +325,35 @@
 
   btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
   btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
-})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+})()</script><div id="aplayer-fixed"></div><script>
+(function() {
+  var aplayerCheck = setInterval(function() {
+    if (typeof APlayer !== 'undefined' && document.getElementById('aplayer-fixed')) {
+      clearInterval(aplayerCheck);
+      fetch('/aplayer_music.json')
+        .then(res => res.json())
+        .then(data => {
+          new APlayer({
+            container: document.getElementById('aplayer-fixed'),
+            fixed: true,
+            autoplay: false,
+            theme: '#49b1f5',
+            loop: 'all',
+            order: 'list',
+            preload: 'none',
+            volume: 0.7,
+            mutex: true,
+            listFolded: false,
+            lrcType: 0,
+            audio: data
+          });
+        })
+        .catch(err => console.error('APlayer list load failed:', err));
+    }
+  }, 300);
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
   const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
   window.pjax = new Pjax({
