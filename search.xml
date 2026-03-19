@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>FC 南极大冒险在线玩</title>
+      <link href="/posts/fcantarctic/"/>
+      <url>/posts/fcantarctic/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><style>[data-type="post"] .recent-post-item .post_cover img {    object-position: top center !important;}</style><h2 id="🎮-游戏画面"><a href="#🎮-游戏画面" class="headerlink" title="🎮 游戏画面"></a>🎮 游戏画面</h2><div class="game-wrapper">    <iframe src="https://rom.831014.xyz/fc/Antarctic-Adventure/index.html" width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe></div><div style="text-align: center; margin-top: 15px;">    <a href="https://rom.831014.xyz/fc/Antarctic-Adventure/index.html" target="_blank" class="fullscreen-btn">🚀 进入全屏模式 (解决卡顿/显示不全)</a></div><style>.game-wrapper {    position: relative;    width: 100%;    height: 0;    padding-bottom: 75%;    min-height: 450px;    background: #000;    border-radius: 12px;    overflow: hidden;    box-shadow: 0 10px 30px rgba(0,0,0,0.5);}.game-iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.fullscreen-btn {    display: inline-block;    background: linear-gradient(135deg, #ff4500 0%, #ff6b3d 100%);    color: #fff !important;    padding: 10px 25px;    border-radius: 50px;    text-decoration: none;    font-weight: 600;    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);    transition: all 0.3s ease;}.fullscreen-btn:hover {    transform: translateY(-2px);    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);}@media screen and (max-width: 768px) {    .game-wrapper {        padding-bottom: 130% !important;    }}@media screen and (max-width: 480px) {    .game-wrapper {        min-height: 520px;    }}@media screen and (orientation: landscape) and (max-height: 500px) {    .game-wrapper {        padding-bottom: 0 !important;        height: 85vh !important;        min-height: 280px !important;    }}</style><hr><h2 id="🛠️-操作说明"><a href="#🛠️-操作说明" class="headerlink" title="🛠️ 操作说明"></a>🛠️ 操作说明</h2><table><thead><tr><th align="left">动作</th><th align="left">电脑按键</th></tr></thead><tbody><tr><td align="left"><strong>方向控制（左右平移）</strong></td><td align="left"><strong>A D</strong></td></tr><tr><td align="left"><strong>前进加速</strong></td><td align="left"><strong>W</strong> 键</td></tr><tr><td align="left"><strong>减速</strong></td><td align="left"><strong>S</strong> 键</td></tr><tr><td align="left"><strong>跳跃</strong></td><td align="left"><strong>J</strong> 键 &#x2F; <strong>K</strong> 键</td></tr><tr><td align="left"><strong>开始&#x2F;暂停</strong></td><td align="left"><strong>Enter</strong> 键</td></tr></tbody></table><div class="note blue icon-padding flat"><i class="note-icon far fa-lightbulb"></i><p><strong>提示</strong>：</p><ol><li><strong>激活按键</strong>：如果按键无效，请先点击一下游戏画面。</li><li><strong>即时存读</strong>：由于这是一个竞速益智游戏，利用模拟器的存档功能可以更轻松地完成环南极旅程。</li><li><strong>躲避障碍</strong>：企鹅在奔跑过程中要小心冰缝和海豹，撞到它们会大幅减速。</li><li><strong>收集物品</strong>：注意收集路上的旗帜和飞出的鱼，它们可以为你加分。</li><li><strong>多端支持</strong>：适配电脑与手机浏览，多平台畅玩。</li></ol></div><hr><h2 id="🌟-游戏特色"><a href="#🌟-游戏特色" class="headerlink" title="🌟 游戏特色"></a>🌟 游戏特色</h2><ul><li><strong>经典重温</strong>：科乐美早期名作，南极大冒险带你回味童年。</li><li><strong>目标明确</strong>：在规定时间内穿越冰雪世界，到达南极科学站！</li><li><strong>可爱主角</strong>：控制憨态可掬的小企鹅，在极地中穿行。</li></ul><p>祝你玩得愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 小游戏在线玩 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FC </tag>
+            
+            <tag> 红白机 </tag>
+            
+            <tag> 益智 </tag>
+            
+            <tag> 南极大冒险 </tag>
+            
+            <tag> 在线玩 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>FC 越野机车在线玩</title>
       <link href="/posts/fcexcitebike/"/>
       <url>/posts/fcexcitebike/</url>
@@ -84,9 +119,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -119,9 +154,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -154,9 +189,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -189,9 +224,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -224,9 +259,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 阿拉丁 </tag>
             
@@ -259,9 +294,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> SFC </tag>
             
@@ -294,9 +329,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -360,9 +395,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -399,9 +434,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 益智 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 牛奶与花生 </tag>
             
@@ -467,9 +502,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 敲冰块 </tag>
             
@@ -502,9 +537,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 马戏团 </tag>
             
@@ -638,9 +673,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 街机 </tag>
             
@@ -739,9 +774,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -774,9 +809,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 松鼠大作战 </tag>
             
@@ -805,9 +840,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> MD </tag>
             
@@ -840,9 +875,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> SFC </tag>
             
@@ -875,9 +910,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -976,9 +1011,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 马里奥 </tag>
             
@@ -1015,9 +1050,9 @@
       
         <tags>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> GBA </tag>
             
@@ -1056,13 +1091,13 @@
             
             <tag> 红白机 </tag>
             
+            <tag> 在线玩 </tag>
+            
             <tag> 动作 </tag>
             
             <tag> 兔宝宝 </tag>
             
             <tag> Tiny Toon </tag>
-            
-            <tag> 在线玩 </tag>
             
         </tags>
       
@@ -1093,9 +1128,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 猫捉老鼠 </tag>
             
@@ -1335,9 +1370,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 快打旋风 </tag>
             
@@ -1370,9 +1405,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 动作 </tag>
-            
             <tag> 在线玩 </tag>
+            
+            <tag> 动作 </tag>
             
             <tag> 气球大战 </tag>
             
@@ -1440,9 +1475,9 @@
             
             <tag> 红白机 </tag>
             
-            <tag> 在线玩 </tag>
-            
             <tag> 益智 </tag>
+            
+            <tag> 在线玩 </tag>
             
             <tag> 淘金者 </tag>
             
